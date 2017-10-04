@@ -1,0 +1,5 @@
+S -> XA | XY | YB | a | b
+X -> XA | XY | YB | a | b | c
+Y -> XY | YB | a | b
+A -> XY
+B -> b
