@@ -1,7 +1,9 @@
 # School-Projects
 This repository contains college projects
 
-# Year 1
+<h2>
+Year 1
+</h2>
 
 <details><summary> Formal Languages and Automata </summary>
         <ul>
