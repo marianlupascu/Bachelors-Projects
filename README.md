@@ -2,8 +2,12 @@
 This repository contains college projects
 
 <h2>
-Year 1
+Bachelors
 </h2>
+
+<h3>
+Year 1
+</h3>
 
 <details><summary> Formal Languages and Automata </summary>
         <ul>
