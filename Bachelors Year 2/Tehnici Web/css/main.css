@@ -13,7 +13,25 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
+    height: 100%;
+    line-height: 1.8;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+img {
+    margin-bottom: -5px
+}
+
+a {
+    color: inherit
 }
 
 /*
@@ -96,22 +114,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -208,9 +210,9 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -225,8 +227,9 @@ textarea {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important;
+        /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -248,7 +251,6 @@ textarea {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -257,6 +259,7 @@ textarea {
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
@@ -267,7 +270,6 @@ textarea {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
@@ -290,3 +292,177 @@ textarea {
     }
 }
 
+.myNavbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    color: #000 !important;
+    background-color: #fff !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.homeButton {
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    white-space: normal;
+    letter-spacing: 4px;
+    padding: 20px;
+}
+
+.otherButtonNavbar {
+    float: right;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    white-space: normal;
+    padding: 20.5px;
+}
+
+.backgroundimg {
+    position: relative;
+    background-size: cover;
+    min-height: 100%;
+    filter: grayscale(10%);
+    background-position: center;
+}
+
+.headertext {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    color: #fff !important;
+    padding: 48px
+}
+
+.title {
+    font-size: 64px !important
+}
+
+.subtitle {
+    font-size: 36px !important
+}
+
+.subsubtitle {
+    font-size: 18px !important
+}
+
+.headerButton {
+    color: #000 !important;
+    background-color: #fff !important;
+    padding: 12px 24px !important;
+    font-size: 18px !important;
+    margin-top: 16px !important;
+    opacity: 0.60;
+}
+
+.headerButton:hover {
+    opacity: 1;
+}
+
+.opacity:hover {
+    opacity: 0.60
+}
+
+.headerSocialButtons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #757575 !important;
+    font-size: 18px !important;
+    padding: 24px 48px;
+}
+
+.aboutcompany {
+    padding: 128px 16px;
+}
+
+.aboutcompanyTitle {
+    text-align: center !important;
+}
+
+.aboutcompanySubtitle {
+    font-size: 18px !important;
+    text-align: center !important;
+}
+
+.aboutcompanyKey {
+    padding: 0 8px;
+    text-align: center !important;
+    margin-top: 64px;
+    display: table;
+}
+
+.aboutcompanyPartition {
+    float: left;
+    width: 25%;
+}
+
+.aboutcompanyPartitionImg {
+    margin-bottom: 16px !important;
+    font-size: 64px !important;
+    text-align: center !important;
+}
+
+.aboutcompanyPartitionText {
+    font-size: 18px !important
+}
+
+.footerText {
+    text-align: center !important;
+    color: #fff !important;
+    background-color: #000 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+}
+
+.textButtontoStart {
+    margin-right: 16px !important;
+}
+
+.buttontoStart {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+
+.footerSubText {
+    font-size: 24px !important;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.invert {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
