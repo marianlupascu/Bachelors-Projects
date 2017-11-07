@@ -34,6 +34,17 @@ a {
     color: inherit
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -85,20 +96,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -295,12 +292,66 @@ textarea {
 .myNavbar {
     position: fixed;
     width: 100%;
+    height: auto;
     z-index: 1;
     top: 0;
-    overflow: hidden;
     color: #000 !important;
     background-color: #fff !important;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#myNavbar a {
+    text-decoration: none;
+}
+
+#myNavbar ul {
+    text-decoration: none;
+}
+
+#myNavbar li {
+    float: right;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    white-space: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.MenuButtonDropDown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 50px;
+}
+
+.MenuContentDropDown-hover {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    scroll-padding-top: 20px;
+    transform: translate(0, 60px);
+}
+
+.MenuButtonDropDown-hover:hover .MenuContentDropDown-hover {
+    display: block;
+    z-index: 1;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.SubmenuElement {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left !important;
+    border: none;
+    outline: none;
+    white-space: normal;
+    float: none;
 }
 
 .button {
@@ -315,15 +366,28 @@ textarea {
     background-color: inherit;
     text-align: center;
     cursor: pointer;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
-.button:disabled {
+.buttonDropDown {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:disabled, .buttonDropDown:disabled {
     cursor: not-allowed;
     opacity: 0.3
 }
 
-.button:hover {
+.button:hover, .buttonDropDown:hover {
     color: #000 !important;
     background-color: #ccc !important
 }
@@ -336,7 +400,7 @@ textarea {
     display: block;
     white-space: normal;
     letter-spacing: 4px;
-    padding: 20px;
+    padding: 18px;
 }
 
 .otherButtonNavbar {
@@ -360,26 +424,27 @@ textarea {
 .headertext {
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 0;
     transform: translate(0%, -50%);
-    color: #fff !important;
+    color: #fff;
     padding: 48px
 }
 
 .title {
-    font-size: 64px !important
+    font-size: 64px;
+    line-height: 98%;
 }
 
 .subtitle {
-    font-size: 36px !important
+    font-size: 36px;
 }
 
 .subsubtitle {
-    font-size: 18px !important
+    font-size: 18px;
 }
 
 .headerButton {
-    color: #000 !important;
+    color: #000;
     background-color: #fff !important;
     padding: 12px 24px !important;
     font-size: 18px !important;
@@ -404,8 +469,15 @@ textarea {
     padding: 24px 48px;
 }
 
+.headerSocialButtons li {
+    display: inline;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
 .aboutcompany {
-    padding: 128px 16px;
+    padding: 78px 16px;
 }
 
 .aboutcompanyTitle {
@@ -426,7 +498,7 @@ textarea {
 
 .aboutcompanyPartition {
     float: left;
-    width: 25%;
+    width: 33.33333%;
 }
 
 .aboutcompanyPartitionImg {
@@ -444,7 +516,7 @@ textarea {
     color: #fff !important;
     background-color: #000 !important;
     padding-top: 64px !important;
-    padding-bottom: 64px !important
+    padding-bottom: 64px !important;
 }
 
 .textButtontoStart {
@@ -462,7 +534,259 @@ textarea {
     margin-bottom: 16px !important
 }
 
+.footerSubText li {
+    display: inline;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
 .invert {
     -webkit-filter: invert(100%);
     filter: invert(100%);
+}
+
+.invert {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.promoSection {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+    padding: 78px 16px;
+}
+
+.contentPromoSection {
+    display: table;
+}
+
+.columnpromoSection {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.buttonPromoSection {
+    color: #fff;
+    background-color: #000;
+}
+
+.imagePromoSection {
+    max-width: 100%;
+    height: auto;
+    background-position: right;
+    border-radius: 8px
+}
+
+.MoviesSectionContent {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 78px 16px;
+}
+
+.MoviesSectionTitle {
+    text-align: center;
+}
+
+.MoviesSectionText {
+    text-align: center;
+    font-size: 18px !important
+}
+
+.MoviesSectionRow {
+    padding: 0 8px;
+    margin-top: 64px;
+}
+
+.MoviesSectionCel {
+    float: left;
+    width: 25%
+}
+
+.continentSection {
+    display: table;
+    clear: both;
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+
+.continentSectionText {
+    padding: 0 8px;
+}
+
+.continentSectionColumn {
+    float: left;
+    width: 50%;
+}
+
+.continentSectionMeterText {
+    letter-spacing: 4px;
+}
+
+.continentSectionMeter {
+    color: #000;
+    background-color: #bbb;
+}
+
+.continentSectionMeterFull {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #000;
+    background-color: #888888;
+    text-align: center;
+}
+
+.PricingSection {
+    transform: translate(0%, -2%);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #888888;
+    padding: 78px 16px;
+}
+
+.PricingSectionSubtitle {
+    font-size: 18px;
+}
+
+.PricingSectionContent {
+    padding: 0 8px;
+    margin-top: 64px;
+    display: flex;
+}
+
+.PricingSectionRect {
+    float: left;
+    width: 33.33333%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.PricingSectionRectList {
+    color: #000;
+    background-color: #fff;
+}
+
+.PricingSectionRectListTitle {
+    color: #fff;
+    background-color: #000;
+    font-size: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.PricingSectionRectListElement {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.PricingSectionRectListElementButton {
+    color: #000;
+    background-color: #f1f1f1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.PricingSectionRectListElementButtonElement {
+    color: #fff;
+    background-color: #000;
+    padding: 12px 24px;
+}
+
+.PricingSectionRectMidd {
+    width: 33.33333%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.PricingSectionRectMiddListTitle {
+    color: #fff;
+    background-color: #f44336;
+    font-size: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.SubscribeForm {
+
+}
+
+.SubscribeInput {
+
+}
+
+.SubscribeInputText {
+    padding: 12px 24px !important;
+    border: none;
+    background-color: #f1f1f1 !important;
+    border-radius: 5px;
+    max-width: 70%;
+    width: 100%;
+}
+
+.SubscribeButton {
+    color: #000;
+    background-color: #f1f1f1 !important;
+    padding: 12px 24px !important;
+    font-size: 18px !important;
+    opacity: 0.60;
+    text-align: center;
+    border: none;
+    transform: translate(0%, 2%);
+}
+
+.SubscribeButton:hover {
+    opacity: 1;
+}
+
+.HomeLogoButton {
+    height: 15%;
+    width: 15%;
+}
+
+.FooterLogo {
+    height: 15%;
+    width: 15%;
+}
+
+@media screen and (max-width: 750px) {
+    .headertext{
+        top: 55%;
+    }
+
+    .title {
+        font-size: 45px;
+        line-height: 70%;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        line-height: 85%;
+    }
+
+    .subsubtitle {
+        font-size: 15px;
+    }
+
+    .headerButton {
+        padding: 10px 20px !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
+    }
+    .HomeLogoButton {
+        display: none;
+    }
+    .SubscribeButton {
+        padding: 6px 20px !important;
+    }
+    .SubscribeInputText {
+        padding: 6px 20px !important;
+        max-width: 50%;
+    }
 }

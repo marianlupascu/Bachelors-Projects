@@ -1,0 +1,157 @@
+
+.headerButtonMovie {
+    color: #000;
+    background-color: #fff !important;
+    padding: 5px 24px !important;
+    font-size: 18px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.60;
+}
+
+.headerButtonMovie:hover {
+    opacity: 1;
+}
+
+.aboutmovie {
+    padding: 78px 16px;
+}
+
+.aboutMovieSection {
+    padding: 0 8px;
+    text-align: center !important;
+    margin-top: 14px;
+    display: inline;
+}
+
+.aboutMoviePartition1 {
+    float: left;
+    width: 25%;
+    font-size: 18px !important;
+}
+
+.aboutMoviePartition2 {
+    float: left;
+    width: 70%;
+}
+
+.DownloadButton {
+    color: white;
+    background-color: black !important;
+    padding: 15px 5% !important;
+    font-size: 1em;
+    opacity: 0.60;
+    width: 80%; !important;
+}
+
+.aboutMoviePartitionImg {
+    margin-bottom: 16px !important;
+    font-size: 45px !important;
+    text-decoration: none;
+}
+
+#MovieInformation {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.MoviesMedia {
+    overflow: hidden;
+    margin-bottom: 65px;
+    height: auto;
+    padding: 18px 16px;
+    background-color: #f1f1f1 !important;
+}
+
+.MoviesMediaTitle {
+    text-align: center;
+}
+
+.MoviesMediaRow {
+    padding: 0 8px 30%;
+    margin-top: 64px;
+    background-color: #f1f1f1 !important;
+}
+
+.MoviesSectionCel1 {
+    float: left;
+    width: 50%
+}
+
+.MoviesSectionCel2 {
+    float: left;
+    width: 25%
+}
+
+.synopsisMovie {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0px 16px;
+    width: 100%;
+}
+
+.contentsynopsisMovie {
+    display: table;
+    clear: both;
+    color: #000 !important;
+    padding-bottom: 64px !important;
+    width: 100%;
+}
+
+.continentSectionMovie {
+    display: flex;
+    padding: 48px 16px;
+    background-color: #f1f1f1 !important;
+}
+
+.continentSectionTextMovie {
+    overflow: hidden;
+    padding: 0 8px;
+    display: flex;
+}
+
+.continentSectionColumnMovie {
+    float: left;
+    width: 50%;
+}
+
+.distributionMovie {
+    display: inline-block;
+    width: 100%;
+    padding: 48px 16px;
+    clear: both;
+    color: #000 !important;
+}
+
+.DistributionSectionRow {
+    padding: 0 8px;
+    margin-top: 64px;
+}
+
+.DistributionSectionCel {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+.DistributionSectionRowText {
+    display: flex;
+    text-align: center;
+    padding: 0 8px;
+    margin-top: 64px;
+}
+
+.DistributionSectionCelText {
+    background-color: #888888;
+    float: left;
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.buttonMovieIMDb {
+    color: #fff;
+    background-color: #000;
+    width: 20%;
+    min-width: 250px;
+}

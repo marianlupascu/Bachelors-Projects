@@ -112,7 +112,6 @@ a {
 
 abbr[title] {
     border-bottom: none; /* 1 */
-    text-decoration: underline; /* 2 */
     text-decoration: underline dotted; /* 2 */
 }
 
@@ -459,11 +458,8 @@ body {
     margin: 0;
 }
 
-.text-white {
+.animateOpacity {
     color: #fff !important;
-}
-
-.bgimg-animate-opacity {
     animation: opac 0.8s;
 }
 
@@ -485,9 +481,9 @@ body {
 }
 
 .invert {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
+     -webkit-filter: invert(100%);
+     filter: invert(100%);
+ }
 
 .content {
     position: absolute;
@@ -519,6 +515,8 @@ body {
 
 .hr-border-gray {
     border-color: #bbb !important;
+    margin:auto;
+    width:40%
 }
 
 
