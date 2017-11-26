@@ -392,7 +392,7 @@ void game() {
       if(screen[1][0])
         score += level;
       unsigned long currentMillis = millis();
-      if(currentMillis - previousMillis > 36000/3){
+      if(currentMillis - previousMillis > 36000){
         previousMillis = currentMillis;
         level++;
       }
@@ -439,11 +439,10 @@ void endgame() {//just some screens for certain actions
     lcdDisplay.setCursor(0, 1);
     lcdDisplay.print("HIGH SCORE:");
     lcdDisplay.print(highscore);
-    score = 0;
     for(int i = 0; i < 50; i++) {
       delay(40);
       sel = readJoystick();
-      if(mapPoint(sel).x == 0 || mapPoint(sel).x == 1 || mapPoint(sel).x == 2) loop();
+      if(mapPoint(sel).x == 0 || mapPoint(sel).x == 1 || mapPoint(sel).x == 2) {score = 0;loop();}
     }
   }
 }
