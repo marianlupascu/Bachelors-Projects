@@ -1,0 +1,731 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    height: 100%;
+    line-height: 1.8;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+img {
+    margin-bottom: -5px;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+.myNavbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    top: 0;
+    color: #000 !important;
+    background-color: #fff !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#myNavbar a {
+    text-decoration: none;
+}
+
+#myNavbar ul {
+    text-decoration: none;
+}
+
+#myNavbar li {
+    float: right;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    white-space: normal;
+    padding: 0;
+    margin: 0;
+}
+
+#mainpage .MenuContentDropDown-hover ul, #contactpage .MenuContentDropDown-hover ul{
+    position: relative;
+    width: 84% !important;
+}
+
+.MenuContentDropDown-hover ul{
+    position: relative;
+    width: 100% !important;
+}
+
+.MenuContentDropDown-hover ul li{
+    position: relative;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.MenuButtonDropDown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 50px;
+}
+
+.MenuContentDropDown-hover {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    transform: translate(0, 60px);
+}
+
+.MenuButtonDropDown-hover:hover .MenuContentDropDown-hover {
+    display: block;
+    z-index: 1;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.SubmenuElement {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left !important;
+    border: none;
+    outline: none;
+    white-space: normal;
+    float: none;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.buttonDropDown {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:disabled, .buttonDropDown:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.button:hover, .buttonDropDown:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+.homeButton {
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    white-space: normal;
+    letter-spacing: 4px;
+    padding: 18px;
+}
+
+.otherButtonNavbar {
+    float: right;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    white-space: normal;
+    padding: 20.5px;
+}
+
+.backgroundimg {
+    position: relative;
+    background-size: cover;
+    min-height: 100%;
+    filter: grayscale(10%);
+    background-position: center;
+}
+
+.headertext {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    color: #fff;
+    padding: 48px;
+}
+
+.title {
+    font-size: 64px;
+    line-height: 95%;
+}
+
+.subtitle {
+    font-size: 36px;
+    line-height: 85%;
+}
+
+.subsubtitle {
+    font-size: 18px;
+}
+
+.headerButton {
+    color: #000;
+    background-color: #fff !important;
+    padding: 12px 24px !important;
+    font-size: 18px !important;
+    margin-top: 16px !important;
+    opacity: 0.60;
+}
+
+.headerButton:hover {
+    opacity: 1;
+}
+
+.opacity:hover {
+    opacity: 0.60;
+}
+
+.headerSocialButtons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #757575 !important;
+    font-size: 18px !important;
+    padding: 24px 48px;
+}
+
+.headerSocialButtons li {
+    display: inline;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutcompany {
+    padding: 78px 16px;
+}
+
+.aboutcompanyTitle {
+    text-align: center !important;
+}
+
+.aboutcompanySubtitle {
+    font-size: 18px !important;
+    text-align: center !important;
+}
+
+.aboutcompanyKey {
+    padding: 0 8px;
+    text-align: center !important;
+    margin-top: 64px;
+    display: table;
+}
+
+.aboutcompanyKeyContent {
+    display: table;
+}
+
+.aboutcompanyPartition {
+    float: left;
+    width: 33.33333%;
+}
+
+.aboutcompanyPartition p {
+    text-align: justify;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.aboutcompanyPartitionImg {
+    margin-bottom: 16px !important;
+    font-size: 64px !important;
+    text-align: center !important;
+}
+
+.aboutcompanyPartitionText {
+    font-size: 18px !important;
+}
+
+.footerText {
+    text-align: center !important;
+    color: #fff !important;
+    background-color: #000 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+
+.textButtontoStart {
+    margin-right: 16px !important;
+}
+
+.buttontoStart {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+
+.footerSubText {
+    font-size: 24px !important;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.footerSubText li {
+    display: inline;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.invert {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.invert {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.translate {
+    transform: translate(0, -10%);
+}
+
+.promoSection {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+    padding: 78px 16px;
+}
+
+.contentPromoSection {
+    display: table;
+}
+
+.columnpromoSection {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.columnpromoSectionTorrent1 {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+
+.columnpromoSectionTorrent2 {
+    float: left;
+    width: 75%;
+    position: relative;
+}
+
+.buttonPromoSection {
+    color: #fff;
+    background-color: #000;
+}
+
+.imagePromoSection {
+    max-width: 100%;
+    height: auto;
+    background-position: right;
+    border-radius: 8px;
+}
+
+.MoviesSectionContent {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 78px 16px;
+}
+
+.MoviesSectionTitle {
+    text-align: center;
+}
+
+.MoviesSectionText {
+    text-align: center;
+    font-size: 18px !important;
+}
+
+.MoviesSectionRow {
+    padding: 0 8px;
+    margin-top: 64px;
+}
+
+.MoviesSectionRow + .MoviesSectionRow {
+    margin-bottom: 75%;
+}
+
+.MoviesSectionRow img {
+    width:100%;
+}
+
+.MoviesSectionCel {
+    float: left;
+    width: 25%;
+}
+
+.continentSection {
+    display: table;
+    clear: both;
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+
+.continentSectionText {
+    padding: 0 8px;
+}
+
+.continentSectionColumn {
+    float: left;
+    width: 50%;
+}
+
+.continentSectionColumn i {
+    margin-right:16px;
+}
+
+.continentSectionMeterText {
+    letter-spacing: 4px;
+}
+
+.continentSectionMeter {
+    color: #000;
+    background-color: #bbb;
+}
+
+.continentSectionMeterFull {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #000;
+    background-color: #888888;
+    text-align: center;
+}
+
+.action {
+    width: 75%;
+}
+
+.drama {
+    width: 60%;
+}
+
+.romance {
+    width: 45%;
+}
+
+.PricingSection {
+    transform: translate(0%, -2%);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #888888;
+    padding: 78px 16px;
+}
+
+.PricingSectionSubtitle {
+    font-size: 18px;
+}
+
+.PricingSectionContent {
+    padding: 0 8px;
+    margin-top: 64px;
+    display: flex;
+}
+
+.PricingSectionRect {
+    float: left;
+    width: 33.33333%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.PricingSectionRectList {
+    color: #000;
+    background-color: #fff;
+}
+
+.PricingSectionRectListTitle {
+    color: #fff;
+    background-color: #000;
+    font-size: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.PricingSectionRectListElement {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.PricingSectionRectListElement p {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 25%;
+}
+
+.PricingSectionRectListElementButton {
+    color: #000;
+    background-color: #f1f1f1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.PricingSectionRectListElementButtonElement {
+    color: #fff;
+    background-color: #000;
+    padding: 12px 24px;
+}
+
+.PricingSectionRectMidd {
+    width: 33.33333%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.PricingSectionRectMiddListTitle {
+    color: #fff;
+    background-color: #f44336;
+    font-size: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.SubscribeForm div div {
+    display: inline;
+}
+
+.SubscribeInput {
+
+}
+
+.SubscribeInputText {
+    padding: 12px 24px !important;
+    border: none;
+    background-color: #f1f1f1 !important;
+    border-radius: 5px;
+    max-width: 70%;
+    width: 100%;
+}
+
+.SubscribeButton {
+    color: #000;
+    background-color: #f1f1f1 !important;
+    padding: 12px 24px !important;
+    font-size: 18px !important;
+    opacity: 0.60;
+    text-align: center;
+    border: none;
+    transform: translate(0%, 2%);
+}
+
+.SubscribeButton:hover {
+    opacity: 1;
+}
+
+.HomeLogoButton {
+    height: 15%;
+    width: 15%;
+}
+
+.FooterLogo {
+    height: 15%;
+    width: 15%;
+}
+
+@media screen and (max-width: 750px) {
+    .headertext {
+        top: 55%;
+    }
+
+    .title {
+        font-size: 2.5em;
+        line-height: 70%;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
+    }
+
+    .subsubtitle {
+        font-size: 15px;
+    }
+
+    .headerButton {
+        padding: 10px 20px !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
+    }
+
+    .HomeLogoButton {
+        display: none;
+    }
+
+    .SubscribeButton {
+        padding: 6px 20px !important;
+    }
+
+    .SubscribeInputText {
+        padding: 6px 20px !important;
+        max-width: 50%;
+    }
+
+    .PricingSection {
+        padding-bottom: 650px;
+    }
+
+    .PricingSectionContent {
+        padding: 0 8px;
+        margin-top: 64px;
+        display: block;
+    }
+
+    .PricingSectionRect {
+        display: inline-block;
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .PricingSectionRectMidd {
+        display: inline-block;
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #mainpage .footerText {
+        transform: translate(0%, -30%) !important;
+    }
+
+    .columnpromoSection {
+        width: 100%;
+    }
+
+    .columnpromoSection + .columnpromoSection {
+        display: none;
+    }
+
+    .aboutcompanyPartition {
+        float: left;
+        width: 50%;
+    }
+
+    .MoviesSectionCel {
+        float: left;
+        width: 50%;
+    }
+
+    .continentSectionColumn {
+        width: 100%;
+    }
+
+    html {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .myNavbar nav ul li.contact {
+        display: none !important;
+    }
+
+    .aboutcompanyPartition {
+        width: 100%;
+    }
+    html {
+        font-size: 0.8em;
+    }
+}
+
+@media print {
+
+    .footerText {
+        background-color: #999999;
+    }
+
+    img {
+        filter: grayscale(75%) !important;
+    }
+
+    .myNavbar {
+        display: none !important;
+    }
+
+    .headerSocialButtons ul.footerSubText {
+        display: none !important;
+    }
+}
