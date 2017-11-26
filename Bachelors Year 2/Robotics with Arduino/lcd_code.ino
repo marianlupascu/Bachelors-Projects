@@ -33,13 +33,13 @@ struct point {
 
 //variabile globale
 unsigned int brightness = 75;
-unsigned long delayTime=10;
+const unsigned long delayTime=10;
 int xRead; //X values from joystick
 int yRead; //Y values from joystick
 char screen[8][8]; //variable for storing screen particles (pixels)
 int n[8][8];  //variable for checking
-int highscore;
-int score=0, birdX=0, birdY=0; //variaous variables for certain operations
+long highscore;
+long score=0, birdX=0, birdY=0; //variaous variables for certain operations
 int level = 1;
 bool err; //boolean for error detection
 int life = 4;
@@ -141,7 +141,7 @@ void SetScreenToMatrix() {
         ledMatrix.setLed(0, mapPointMatrix(point(i, j)).x, mapPointMatrix(point(i, j)).y, true);
     }
   }
-  //delay(delayTime*30);    
+  delay(delayTime * 20);    
 }
 
 void loop() { 
@@ -151,6 +151,18 @@ void loop() {
 
 point curentPoint = mapPointMatrix(point(1, 4)), precPoint, defPoint = mapPointMatrix(point(3, 3));
 point bird;
+
+void actualizeLinesForBoss(){
+  for(int i = 0; i < 7; i++){
+    for(int j = 0; j < 8; j++){
+      screen[i][j] = screen[i+1][j];
+    }
+  }
+
+  for(int i = 0; i < 8; i++){
+    screen[7][i] = 0;
+  }
+}
 
 void actualizeLines(){
   for(int i = 0; i < 7; i++){
@@ -169,8 +181,8 @@ void actualizeLines(){
     if(rand() % 2){
       for(int i = 0; i < 8; i++)
         screen[7][i] = 1;
-      int emptyPos = rand() % 3 + 1;
-      int emptySpace = min(emptyPos + 2 + rand() % (7 - 2 - emptyPos), 6);
+      int emptyPos = rand() % 5 + 1;
+      int emptySpace = min(emptyPos + 1 + rand() % (7 - 1 - emptyPos), 6);
       for(int i = emptyPos; i <= emptySpace; i++)
         screen[7][i] = 0;
     }
@@ -181,14 +193,14 @@ void moveBird(int &i) {
   int newPositionY = readYFromJoystick();
   precPoint = curentPoint;
   if( newPositionY > 530 ) {
-    curentPoint.y = map(newPositionY, 400, 1000, min(curentPoint.y + 1, 7), 7);
+    curentPoint.y = map(newPositionY, 530, 1000, min(curentPoint.y + 1, 7), 7);
     for(int i = precPoint.y; i < curentPoint.y; i++)
       SetPointToMatrix(mapPointMatrix(point(1, i)));
     for(int i = precPoint.y; i < curentPoint.y; i++)
       unsetPointToMatrix(mapPointMatrix(point(1, i)));
   }
   if( newPositionY < 500) {
-    curentPoint.y = map(newPositionY, 0, 600, 0, max(curentPoint.y-1, 0));
+    curentPoint.y = map(newPositionY, 0, 500, 0, max(curentPoint.y-1, 0));
     for(int i = precPoint.y; i > curentPoint.y; i--)
       SetPointToMatrix(mapPointMatrix(point(1, i)));
     for(int i = precPoint.y; i > curentPoint.y; i--)
@@ -219,8 +231,133 @@ int setLevelDificulty() {
   }
 }
 
+struct enemy{
+    point bossPosition = point(6,3);
+    void drowBoss(){
+      SetPointToMatrix(mapPointMatrix(bossPosition));
+      SetPointToMatrix(mapPointMatrix(point(bossPosition.x + 1, bossPosition.y)));
+      SetPointToMatrix(mapPointMatrix(point(bossPosition.x, bossPosition.y + 1)));
+      SetPointToMatrix(mapPointMatrix(point(bossPosition.x + 1, bossPosition.y + 1)));
+    }
+    void setBoss(){
+      screen[bossPosition.x][bossPosition.y] = 1;
+      screen[bossPosition.x + 1][bossPosition.y] = 1;
+      screen[bossPosition.x][bossPosition.y + 1] = 1;
+      screen[bossPosition.x + 1][bossPosition.y + 1] = 1;
+    }
+    void unsetBoss(){
+      screen[bossPosition.x][bossPosition.y] = 0;
+      screen[bossPosition.x + 1][bossPosition.y] = 0;
+      screen[bossPosition.x][bossPosition.y + 1] = 0;
+      screen[bossPosition.x + 1][bossPosition.y + 1] = 0;
+    }
+    int distanceToBoss(){
+      return (int) sqrt((bird.x - bossPosition.x) * (bird.x - bossPosition.x) + (bird.y - bossPosition.y) * (bird.y - bossPosition.y));
+    }
+  } bosss;
+
+void bossUpOrDownRandom() {
+  int pos = rand()%7;
+  bosss.unsetBoss();
+  bosss.bossPosition.y = pos;
+  bosss.setBoss();
+}
+
+void bossUpOrDownBad() {
+  int pos = rand()%7;
+  bosss.unsetBoss();
+  bosss.bossPosition.y = (bird.y == 7 ? 6 : bird.y);
+  bosss.setBoss();
+}
+
+void bossToBird() {
+  int pos = rand()%7;
+  bosss.unsetBoss();
+  bosss.bossPosition.x = pos;
+  bosss.setBoss();
+}
+
+void actualizeBoss() {
+  int option = rand() % 3;
+  switch(option) {
+    case 0: {bossUpOrDownRandom(); break;}
+    case 1: {bossUpOrDownBad(); break;}
+    case 2: {bossToBird(); break;}
+  }
+}
+
 void boss(){
+
+  ledMatrix.clearDisplay(0);
+  for(int p = 0; p < 8; p++){
+    lcdDisplay.begin(16,2); 
+    lcdDisplay.clear();         //clear the screen
+    lcdDisplay.setCursor(0,0); //set cursor to upper left corner
+    lcdDisplay.print("Lives: ");
+    for(int l = 0; l < life; l++)
+      lcdDisplay.print(char(0));
+    lcdDisplay.setCursor(0,1);
+    lcdDisplay.print("Score: ");
+    lcdDisplay.print(score);
+
+    lcdDisplay.setCursor(12,0);
+    lcdDisplay.print("L:");
+    lcdDisplay.print(level);
+    
+    actualizeLinesForBoss();
+    SetScreenToMatrix();
+
+    int i;
+    for(i = 0; i < setLevelDificulty(); i++)
+      moveBird(i);
+
+    if(i >= 100) {
+      claenScren();
+      ledMatrix.clearDisplay(0);
+    }
+    else
+      if(screen[1][0])
+         score += level;
+    ledMatrix.clearDisplay(0);
+  }
+
+  //Boss code
   
+  while(true) {
+    lcdDisplay.begin(16,2); 
+    lcdDisplay.clear();         //clear the screen
+    lcdDisplay.setCursor(0,0); //set cursor to upper left corner
+    lcdDisplay.print("Lives: ");
+    for(int l = 0; l < life; l++)
+      lcdDisplay.print(char(0));
+    lcdDisplay.setCursor(0,1);
+    lcdDisplay.print("Score: ");
+    lcdDisplay.print(score);
+
+    lcdDisplay.setCursor(12,0);
+    lcdDisplay.print("L:");
+    lcdDisplay.print(level);
+    
+    actualizeBoss();
+    SetScreenToMatrix();
+
+    int i;
+    for(i = 0; i < 50; i++)
+      moveBird(i);
+
+    if(i >= 100) {
+      claenScren();
+      ledMatrix.clearDisplay(0);
+    }
+     else {
+      unsigned long currentMillis = millis();
+      if(currentMillis - previousMillis > 100){
+        previousMillis = currentMillis;
+        score += bosss.distanceToBoss();
+      }
+    }
+    ledMatrix.clearDisplay(0);
+  }
 }
 
 void game() {
