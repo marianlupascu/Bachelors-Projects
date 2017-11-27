@@ -1,8 +1,8 @@
 # Led Matrix Game
 
 <div style="float: left;">
-  <p style = "width: 70%; margin : 25px; box-sizing: border-box;"/>Information and documentation is in romanian.</p>
-  <img src="http://intranet.tuck.dartmouth.edu/assets/img/tc-img-grid-video.png" width="20%" style = "margin : 25px"; box-sizing: border-box;/>
+  <p width="70%" style = "margin : 25px; box-sizing: border-box; display: inline-blok;"/>Information and documentation is in romanian.</p>
+  <img src="http://intranet.tuck.dartmouth.edu/assets/img/tc-img-grid-video.png" width="20%" style = "margin : 25px"; box-sizing: border-box; display: inline-blok;/>
 </div>
 
 <div style="float: left;">
