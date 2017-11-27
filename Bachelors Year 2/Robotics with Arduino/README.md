@@ -2,7 +2,7 @@
 
 <div style="float: left;">
   <p style = "width: 70%; margin : 25px; box-sizing: border-box;"/>Information and documentation is in romanian.</p>
-  <div style = "width: 20%;"><img src="http://intranet.tuck.dartmouth.edu/assets/img/tc-img-grid-video.png" style = "margin : 25px"; box-sizing: border-box;/></div>
+  <img src="http://intranet.tuck.dartmouth.edu/assets/img/tc-img-grid-video.png" width="20%" style = "margin : 25px"; box-sizing: border-box;/>
 </div>
 
 <div style="float: left;">
