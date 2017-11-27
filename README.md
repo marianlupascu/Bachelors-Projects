@@ -25,6 +25,7 @@ Year 1
                 <li> <a href = "https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/CYK%20Parsing%20-Cocke-Younger-Kasami"> CYK Parsing </a> </li>
                 <li> <a href = "https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/DFA%20Minimal"> DFA Minimal </a> </li>
                 <li> <a href = "https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata"> Others </a> </li>
+        </ul>
         
 </details>
 
@@ -32,12 +33,12 @@ Year 1
         <ul>
                 <li> <a href = "https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Geometry/Gauss%20Elimination%20Method%20Algorithm"> Gauss Elimination Method Algorithm </a> </li>
                 <li> <a href = "https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Geometry/Gram-Schmidt%20Process%20Algorithm"> Gram-Schmidt Process Algorithm </a> </li>
-        
+        </ul>
 </details>
 
 <details><summary> Object Oriented Programming </summary>
         <ul>
                 <li> <a href = "https://github.com/marianlupascu/Chess-Game"> Chess-Game </a> </li>
                 <li> <a href = "https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Object%20Oriented%20Programming"> Others </a> </li>
-        
+        </ul>
 </details>
