@@ -1,11 +1,9 @@
 # Led Matrix Game
 
-Information and documentation is in romanian.
-
-<video width="320" height="240" controls>
-  <source src="trailer.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="float: left;">
+  <p style = "width: 70%; margin : 25px; box-sizing: border-box;"/>Information and documentation is in romanian.</p>
+  <img src="http://intranet.tuck.dartmouth.edu/assets/img/tc-img-grid-video.png" style = "width: 20%; margin : 25px"; box-sizing: border-box;/>
+</div>
 
 <div style="float: left;">
   <img src="img1.jpg" width="33%"/>
