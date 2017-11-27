@@ -2,7 +2,10 @@
 
 Information and documentation is in romanian.
 
-[![Alt text](https://img.youtube.com/vi/VID/0.jpg)](https://www.youtube.com/watch?v=VID)
+<video width="320" height="240" controls>
+  <source src="trailer.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <div style="float: left;">
   <img src="img1.jpg" width="33%"/>
