@@ -18,7 +18,8 @@
   <li>1 x robotlinking uno r3</li>
   <li>1 x lcd 1602 module</li>
   <li>1 x breadboard</li>
-  <li>2 x servo-motors</li>
+  <li>1 x servo-motor</li>
+  <li>1 x stepper-motor</li>
   <li>1 x color-sensor</li>
   <li>jumper wire</li>
   <li>1 x F-M cable</li>
