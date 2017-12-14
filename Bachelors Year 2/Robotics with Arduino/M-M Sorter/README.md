@@ -20,6 +20,7 @@
   <li>1 x breadboard</li>
   <li>1 x servo-motor</li>
   <li>1 x stepper-motor</li>
+  <li>1 x uln 2003 steper motor driver</li>
   <li>1 x color-sensor</li>
   <li>jumper wire</li>
   <li>1 x F-M cable</li>
