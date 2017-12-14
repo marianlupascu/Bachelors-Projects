@@ -1,7 +1,7 @@
 
 # M&M Sorter
 
-<p>Information <a href = "https://docs.google.com/document/d/1kxodLAJLGkm1ro1c2_9M5vvlxAfv8lFYGnMvJd8eEiU/edit?usp=sharing">the list of necessary items</a>, and documentation is in romanian.</p>
+<p>Information, <a href = "https://docs.google.com/spreadsheets/d/1Q7FF3S4HWYS7HdumrN-qn6-QVmrpno_l1eS3zsmzjjE/edit?usp=sharing">the list of necessary items</a>, and documentation is in romanian.</p>
 
 <a href = "https://drive.google.com/open?id=1pw-dHcAWsJrTj6GxN-NlucRSvHBX6qij"><img src=""/></a>
 
