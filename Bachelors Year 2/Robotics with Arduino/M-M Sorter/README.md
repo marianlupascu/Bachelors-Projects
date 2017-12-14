@@ -15,7 +15,7 @@
 <ol>
   <li>Initially, colored candies are held in a charger and fall in turn (they are taken over by a stepper-motor). </li>
   <li>Then it is analyzed by the color sensor that detects its color.</li>
-  <li>Then the servomotor picks up the candy, rotates to the candy color container.<li>
+  <li>Then the servomotor picks up the candy, rotates to the candy color container.</li>
 </ol>
 
 <h2>Used components</h2>
