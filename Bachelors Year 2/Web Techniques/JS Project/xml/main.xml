@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <images>
+        <image type="background" id="background">img/background1.jpg</image>
+        <image type="background" id="background">img/background2.jpg</image>
+        <image type="background" id="background">img/background3.gif</image>
+        <image type="background" id="background">img/background4.png</image>
+        <image type="background" id="background">img/background5.gif</image>
+        <image type="background" id="background">img/background6.gif</image>
+        <image type="opponent" id="DoctorOctopus" w="150" h="234">img/DoctorOctopus.png</image>
+        <image type="opponent" id="Colossus" w="360" h="502">img/Colossus.png</image>
+        <image type="opponent" id="Whiplash" w="390" h="227">img/Whiplash.png</image>
+        <image type="opponent" id="RedSkull" w="792" h="1359">img/RedSkull.png</image>
+        <image type="opponent" id="Loki" w="159" h="247">img/Loki.png</image>
+        <image type="ally" id="SpiderMan" w="1142" h="700">img/SpiderMan.png</image>
+        <image type="ally" id="DeadPool" w="1024" h="1736">img/DeadPool.png</image>
+        <image type="ally" id="IronMan" w="1209" h="2211">img/IronMan.png</image>
+        <image type="ally" id="CaptainAmerica" w="557" h="1500">img/CaptainAmerica.png</image>
+        <image type="ally" id="Thor" w="2000" h="2892">img/Thor.png</image>
+        <image type="player" id="player" w="266" h="387">img/EmmaFrost.png</image>
+        <image type="movie">img/SpiderMan_wallpaper.jpeg</image>
+        <image type="movie">img/Deadpool_wallpaper.jpg</image>
+        <image type="movie">img/IronMan_wallpaper.jpg</image>
+        <image type="movie">img/CaptainAmerica_wallpaper.jpg</image>
+        <image type="movie">img/Thor_wallpaper.jpg</image>
+    </images>
+    <sounds>
+        <sound type="dead" id="dead">sound/dead.mp3</sound>
+        <sound type="next_level" id="next_level">sound/next_level.mp3</sound>
+    </sounds>
+    <videos>
+        <video id="trailer">video/AvengersInfinityWar.mp4</video>
+    </videos>
+</resources>

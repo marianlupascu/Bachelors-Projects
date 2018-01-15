@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Marvel Game - LM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+<div id="logo"></div>
+
+<section class="backgroundProgressBar">
+    <div class="containerProgressBar">
+        <p id="progressCount">0%</p>
+        <div class="progress">
+            <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated"
+                 style="width:0%"></div>
+        </div>
+        <p>Please wait while the application is loading...</p>
+        <hr>
+    </div>
+</section>
+
+<section class="containerMenu">
+    <div id="allthethings">
+        <div id="left"></div>
+        <div id="newGame" onclick="game()"><p>NEW GAME</p></div>
+        <div id="tutorials" onclick="seeTutorials()"><p>TUTORIALS</p></div>
+        <div id="options" onclick="seeOptions()"><p>OPTIONS</p></div>
+        <div id="credits" onclick="seeCredits()"><p>CREDITS</p></div>
+        <div id="right"></div>
+
+        <div id="exit" onclick="exit()"></div>
+        <div id="circle"></div>
+    </div>
+    <p class="title">MAIN MENU</p>
+</section>
+
+<aside id="menuButton">
+    <div class="button__holder">
+        <button class="plus" onclick="exitToMenu()"></button>
+    </div>
+</aside>
+
+<div id="backgroundGame">
+    <div id="tv"></div>
+    <p id="score">Score: <span id="scoreValue">0</span></p>
+</div>
+
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

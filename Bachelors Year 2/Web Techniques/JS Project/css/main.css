@@ -1,0 +1,1474 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600');
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    background: white url("../img/backgroundInit.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Neuropol;
+    src: url("../fonts/NEUROPOL.ttf");
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+#logo {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    background: rgb(234, 35, 40) url("../img/LMlogo.png");
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    z-index: 100 !important;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+p#score {
+    font-family: shadows into light;
+    z-index: 100 !important;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 10%;
+    margin: 2%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#backgroundGame {
+    display: none;
+    position: absolute;
+    z-index: -2 !important;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#tv {
+    position: absolute;
+    z-index: 50 !important;
+    background-size: 100% 100%;
+    background-image: url("../img/SpiderMan_wallpaper.jpeg");
+    width: 20%;
+    height: 25%;
+    top: 2%;
+    right: 2%;
+    margin: 1%;
+    border: 2px solid white;
+}
+
+/* ===============================
+            PROGRESS BAR
+   ===============================*/
+
+.backgroundProgressBar {
+    position: absolute;
+    z-index: 10 !important;
+    width: 100%;
+}
+
+.backgroundProgressBar p {
+    text-align: center;
+    color: white;
+}
+
+.backgroundProgressBar hr {
+    width: 50%;
+    border-top: 1px solid #8c8b8b;
+    margin-left: 25%;
+}
+
+.containerProgressBar {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+#progressCount {
+    font-size: 5em;
+}
+
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+    transform: translate(0, -50px);
+}
+
+@-webkit-keyframes progress-bar-stripes {
+
+    from {
+        background-position: 1rem 0
+    }
+
+    to {
+        background-position: 0 0
+    }
+
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 1rem 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem
+}
+
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #007bff
+}
+
+.progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem
+}
+
+.progress-bar-animated {
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
+    animation: progress-bar-stripes 1s linear infinite
+}
+
+/* ===============================
+                MENU
+   ===============================*/
+.containerMenu {
+    display: none;
+}
+
+.containerMenu p.title {
+    font-size: 3rem;
+    color: white;
+    font-family: shadows into light;
+    text-align: center;
+    position: relative;
+    z-index: 50;
+    font-weight: bold;
+}
+
+#exit {
+    height: 30px;
+    width: 30px;
+    background: #006680;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: Absolute;
+    top: -30px;
+    z-index: 50;
+    right: -15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#exit:after {
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    background: transparent;
+    border-radius: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 3px solid rgb(234, 35, 40);
+    border-top-color: transparent;
+}
+
+#exit:before {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 3px;
+    background: rgb(234, 35, 40);
+    z-index: 70;
+    position: Absolute;
+    right: 13px;
+    top: 6px;
+}
+
+#circle {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: absolute;
+    top: -35px;
+    z-index: 40;
+    right: -20px;
+}
+
+#exit:hover {
+    background: darkorange;
+}
+
+#allthethings {
+    width: 0px;
+    height: 0px;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-top: 300px solid transparent;
+    position: relative;
+    margin: auto;
+    top: 5px;
+    left: 2px;
+}
+
+#newGame {
+
+    position: relative;
+    bottom: 330px;
+    right: 300px;
+    height: 50px;
+    width: 600px;
+    background: #006680;
+    text-align: center;
+    font-size: 30px;
+    background-size: 1px 300%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: rgb(234, 35, 40);
+    font-family: shadows into light;
+    cursor: pointer;
+}
+
+#newGame:hover {
+    background: #7A0000;
+    color: white;
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-2deg);
+
+}
+
+#tutorials:hover {
+    background: #7A0000;
+    color: white;
+
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+
+}
+
+#credits:hover {
+    background: #7A0000;
+    color: white;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+
+}
+
+#options:hover {
+    background: #7A0000;
+    color: white;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+
+}
+
+#left {
+    height: 100px;
+    width: 600px;
+    background: rgb(234, 35, 40);
+    position: absolute;
+    z-index: 6;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -175px;
+    right: -104px;
+    border-top: 1px solid white;
+
+}
+
+#right {
+    height: 100px;
+    width: 600px;
+    background: rgb(234, 35, 40);
+    position: absolute;
+    top: -229px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: 7;
+    left: -56px;
+    border-top: 1px solid white;
+}
+
+#newGame p {
+    position: relative;
+    top: 2px;
+    right: 4px;
+}
+
+#tutorials {
+    height: 50px;
+    width: 500px;
+    background: #006680;
+    position: relative;
+    bottom: 345px;
+    right: 240px;
+    text-align: center;
+    font-size: 30px;
+    font-family: shadows into light;
+    color: rgb(234, 35, 40);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#tutorials p {
+    position: relative;
+    top: 0px;
+    right: 9px;
+}
+
+#options {
+    height: 50px;
+    width: 400px;
+    background: #006680;
+    position: relative;
+    bottom: 360px;
+    right: 200px;
+    font-size: 30px;
+    text-align: center;
+    font-family: shadows into light;
+    color: rgb(234, 35, 40);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#options p {
+    position: relative;
+    top: 0px;
+    right: 4px;
+}
+
+#credits {
+    height: 50px;
+    width: 300px;
+    position: relative;
+    background: #006680;
+    bottom: 375px;
+    font-size: 30px;
+    right: 150px;
+    text-align: center;
+    font-family: shadows into light;
+    color: rgb(234, 35, 40);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#credits p {
+    position: relative;
+    top: 0px;
+}
+
+/* ===============================
+             MENU BUTTON
+   ===============================*/
+
+/*Simple Button Hover*/
+/*Simple multi layer box shadow hover effect.*/
+/*Made by Dominic Magnifico*/
+/*August 21, 2015*/
+
+.button__holder {
+    z-index: 200;
+    display: none;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.button__holder:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button__holder h2 {
+    margin-right: 1em;
+    text-align: center;
+    color: #8A3B58;
+}
+
+.plus {
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    color: #1a1a1a;
+    background: #006680;
+    border-radius: 50%;
+    border: none;
+    -webkit-transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+}
+
+.plus:after {
+    content: "+";
+    font-size: 2.5em;
+    line-height: 1.1em;
+}
+
+.plus:hover {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: 0 0 1px 15px rgba(138, 59, 88, 0.4), 0 0 1px 30px rgba(138, 59, 88, 0.1), 0 0 1px 45px rgba(138, 59, 88, 0.1);
+}
+
+/* ===============================
+             TUTORIALS
+   ===============================*/
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+
+.overlay {
+    font-family: 'Arimo', sans-serif;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 66%;
+}
+
+.overlay h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+    font-family: inherit;
+}
+
+.overlay p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: inherit;
+    margin-bottom: 20px;
+
+}
+
+/* ===============================
+             OPTIONS
+   ===============================*/
+/* ======================
+             RANGE
+   =======================*/
+
+.options {
+    font-family: Neuropol;
+    color: white;
+    margin: 2%;
+}
+
+.options h1 {
+    text-align: center;;
+    font-weight: bold;
+}
+
+.volumeRange {
+    width: 45%;
+    display: inline-block;
+}
+
+.volumeRange p {
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #006680;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #006680;
+    cursor: pointer;
+}
+
+/* ======================
+       TEXT + SELECT
+   =======================*/
+
+.options input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ======================
+         CHECKBOX
+   =======================*/
+
+.containerCheckBox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerCheckBox input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCheckBox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheckBox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCheckBox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheckBox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ======================
+         RADIO
+   =======================*/
+
+/* The container */
+.containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerRadio input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmarkRadio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadio:hover input ~ .checkmarkRadio {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadio input:checked ~ .checkmarkRadio {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkRadio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadio input:checked ~ .checkmarkRadio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadio .checkmarkRadio:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.backgrounds .imag {
+    border-radius: 8px;
+    max-width: 150px;
+    width: auto;
+    height: 75px;
+    margin: 1%;
+    background-size: 100% 100%;
+}
+
+/* ======================
+         TEXTAREA
+   =======================*/
+
+textarea {
+    width: 50%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+/* ======================
+         TEXTAREA
+   =======================*/
+
+input.datalist {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ===============================
+             SUBMIT BUTTON
+   ===============================*/
+
+/*Submit Button With Loading Effect*/
+/*Button that brings some life to a web form.*/
+/*Made by Gabriel Soares*/
+/*March 1, 2017*/
+
+.SumitButton {
+    margin: 2%;
+}
+
+.SumitButton .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.SumitButton button {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: #006680;
+    color: #fff;
+    padding: 0 10px;
+    font-family: 'Oswald', sans-serif;
+    outline: 0;
+}
+
+.SumitButton button:hover {
+    cursor: pointer;
+    -webkit-animation: moveButton 0.4s ease forwards;
+    animation: moveButton 0.4s ease forwards;
+}
+
+.SumitButton .bar,
+.SumitButton .load {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    width: 95%;
+    height: 5px;
+    background-color: rgb(149, 166, 255);
+    border-radius: 20px;
+    opacity: 0;
+    box-sizing: border-box;
+    margin: 0 4.5px;
+}
+
+.SumitButton .load {
+    background-color: #fff;
+    z-index: 1;
+    width: 0%;
+}
+
+.SumitButton button:active {
+    outline: 0;
+}
+
+.SumitButton button:hover .bar {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.SumitButton button:hover > strong > i {
+    -webkit-animation: tremble 0.5s 0.4s ease;
+    animation: tremble 0.5s 0.4s ease;
+}
+
+.SumitButton button:hover .load {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.SumitButton .loading {
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: all 5s 0.1s linear;
+    transition: all 5s 0.1s linear;
+}
+
+.SumitButton button.completeSubmit {
+    background-color: #4EBA4E;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.SumitButton button.completeSubmit .bar,
+.SumitButton button.completeSubmit strong,
+.SumitButton button.completeSubmit .load {
+    opacity: 0;
+}
+
+.SumitButton button.completeSubmit:before {
+    content: '\f00c';
+    font-family: 'fontawesome';
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(1.2);
+    transform: translateX(-50%) scale(1.2);
+    color: #fff;
+    font-size: 1.5em;
+    opacity: 0;
+    -webkit-animation: appear 0.5s 0.2s ease-in-out forwards;
+    animation: appear 0.5s 0.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tremble {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes tremble-end {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-50%);
+        transform: rotate(0deg) translateX(-50%);
+    }
+    25% {
+        -webkit-transform: rotate(-10deg) translateX(-50%);
+        transform: rotate(-10deg) translateX(-50%);
+    }
+    50% {
+        -webkit-transform: rotate(0deg) translateX(-50%);
+        transform: rotate(0deg) translateX(-50%);
+    }
+    75% {
+        -webkit-transform: rotate(10deg) translateX(-50%);
+        transform: rotate(10deg) translateX(-50%);
+    }
+    100% {
+        -webkit-transform: rotate(0deg) translateX(-50%);
+        transform: rotate(0deg) translateX(-50%);
+    }
+}
+
+@keyframes tremble {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes moveButton {
+    0% {
+        width: 200px;
+        -webkit-transform: skew(0deg);
+        transform: skew(0deg);
+        border-radius: 5px;
+    }
+    10% {
+        -webkit-transform: translateY(-12px) skew(-10deg);
+        transform: translateY(-12px) skew(-10deg);
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    15% {
+        -webkit-transform: translateY(-7px) skew(10deg);
+        transform: translateY(-7px) skew(10deg);
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    20% {
+        -webkit-transform: translateY(-2px) skew(-15deg);
+        transform: translateY(-2px) skew(-15deg);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    30% {
+        -webkit-transform: translateY(0px) skew(15deg);
+        transform: translateY(0px) skew(15deg);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    40% {
+        -webkit-transform: skew(-20deg);
+        transform: skew(-20deg);
+        width: 210px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    50% {
+        -webkit-transform: skew(20deg);
+        transform: skew(20deg);
+        width: 210px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    60% {
+        -webkit-transform: skew(-15deg);
+        transform: skew(-15deg);
+        width: 200px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    70% {
+        -webkit-transform: skew(15deg);
+        transform: skew(15deg);
+        width: 200px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    80% {
+        -webkit-transform: skew(-10deg);
+        transform: skew(-10deg);
+        width: 200px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    90% {
+        -webkit-transform: skew(5deg);
+        transform: skew(5deg);
+        width: 200px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    100% {
+        -webkit-transform: skew(0deg);
+        transform: skew(0deg);
+        width: 200px;
+        border-radius: 5px;
+    }
+}
+
+@keyframes moveButton {
+    0% {
+        width: 200px;
+        -webkit-transform: skew(0deg);
+        transform: skew(0deg);
+        border-radius: 5px;
+    }
+    10% {
+        -webkit-transform: translateY(-12px) skew(-10deg);
+        transform: translateY(-12px) skew(-10deg);
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    15% {
+        -webkit-transform: translateY(-7px) skew(10deg);
+        transform: translateY(-7px) skew(10deg);
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    20% {
+        -webkit-transform: translateY(-2px) skew(-15deg);
+        transform: translateY(-2px) skew(-15deg);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    30% {
+        -webkit-transform: translateY(0px) skew(15deg);
+        transform: translateY(0px) skew(15deg);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    40% {
+        -webkit-transform: skew(-20deg);
+        transform: skew(-20deg);
+        width: 210px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    50% {
+        -webkit-transform: skew(20deg);
+        transform: skew(20deg);
+        width: 210px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    60% {
+        -webkit-transform: skew(-15deg);
+        transform: skew(-15deg);
+        width: 200px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    70% {
+        -webkit-transform: skew(15deg);
+        transform: skew(15deg);
+        width: 200px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    80% {
+        -webkit-transform: skew(-10deg);
+        transform: skew(-10deg);
+        width: 200px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    90% {
+        -webkit-transform: skew(5deg);
+        transform: skew(5deg);
+        width: 200px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    100% {
+        -webkit-transform: skew(0deg);
+        transform: skew(0deg);
+        width: 200px;
+        border-radius: 5px;
+    }
+}
+
+/* ===============================
+             character
+   ===============================*/
+
+.character {
+    position: absolute;
+    background-size: 100% 100%;
+    height: 175px;
+}
+
+.opponent {
+    z-index: 5 !important;
+}
+
+.ally {
+    z-index: 4 !important;
+}
+
+.player {
+    z-index: 6 !important;
+}
+
+.progressContainer {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+    position: relative;
+    display: flex;
+    width: 50px;
+    top: 0;
+    z-index: 5 !important;
+    margin: auto;
+    transform: translate(0, -15px);
+    border-radius: 10px;
+}
+
+.progressLife {
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff !important;
+}
+
+.opponent .progressLife {
+    background-color: #f44336 !important;
+}
+
+.ally .progressLife {
+    background-color: #4CAF50 !important;
+}
+
+.player .progressLife {
+    background-color: #2196F3 !important;
+}
+
+/* ===============================
+             BULLETS
+   ===============================*/
+
+.bullet {
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.lightning {
+    background-image: url("../img/lightning.png");
+    z-index: 50 !important;
+    width: 50px;
+    height: 125px;
+    top: 65%;
+    transform: rotate(90deg);
+}
+
+.atomic {
+    background-image: url("../img/bulletAtomic.png");
+    z-index: 50 !important;
+    width: 50px;
+    height: 50px;
+    top: 65%;
+    transform: rotate(-45deg);
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
