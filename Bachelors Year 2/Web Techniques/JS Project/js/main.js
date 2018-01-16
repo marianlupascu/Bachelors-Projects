@@ -301,10 +301,44 @@ function exitToMenu() {
         options[0].style.display = "none";
     }
     var bg = document.getElementById("backgroundGame");
-    if (bg.style.display == "block") {
+    if (bg.style.display === "block") {
         //console.log(bg);
         bg.style.display = "none";
+        while (bg.hasChildNodes()) {
+            bg.removeChild(bg.lastChild);
+        }
+
+        var divTv = document.createElement("DIV");
+        divTv.id = 'tv';
+        bg.appendChild(divTv);
+        var p = document.createElement("p");
+        p.id = "score";
+        p.innerHTML = "Score: ";
+        var span = document.createElement("SPAN");
+        span.id = "scoreValue";
+        span.innerText = "0";
+        p.appendChild(span);
+        bg.appendChild(p);
+        updateLives();
     }
+}
+
+function updateLives() {
+
+    for (var i = 0; i < enemies.length; i++) {
+        var elem = enemies[i].getElementsByClassName("progressLife")[0];
+        elem.style.width = 100 + '%';
+    }
+
+    for (var i = 0; i < allies.length; i++) {
+        var elem = allies[i].getElementsByClassName("progressLife")[0];
+        elem.style.width = 100 + '%';
+    }
+    var elem = player.getElementsByClassName("progressLife")[0];
+    elem.style.width = 100 + '%';
+
+    clearInterval(setBulletAtomic);
+    level = 1;
 }
 
 function seeCredits() {
