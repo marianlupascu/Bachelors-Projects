@@ -365,12 +365,36 @@ function seeCredits() {
     p.style.marginTop = "7.5%";
     elem.appendChild(p);
 
+    var score = document.createElement("P");
+    score.style.fontSize = .5 + 'em';
+    score.innerText = "Best Score " + localStorage.getItem("heighscore") + ", date " + localStorage.getItem("heighscoreDate");
+    score.style.textAlign = "center";
+    score.style.margin = "auto";
+    elem.appendChild(score);
+
+    var p2 = document.createElement("P");
+    p2.innerText = "Info";
+    p2.style.textAlign = "center";
+    p2.style.margin = "auto";
+    p2.style.marginTop = "1%";
+    elem.appendChild(p2);
+
     var info = document.createElement("P");
-    info.style.fontSize = .5 + 'em';
-    info.innerText = "Best Score " + localStorage.getItem("heighscore") + ", date " + localStorage.getItem("heighscoreDate");
-    info.style.textAlign = "center";
+    info.style.fontSize = .275 + 'em';
+    info.innerText = "The game contains five levels, each of which is related to a Marvel series movie. The " +
+        "protagonist is Emma Frost. The objective of the game is to pass all 5 levels. In each level you can" +
+        " draw positive characters from the top right of the game, only if the negative character is from that " +
+        "movie (for example, if you are level 1 - which is related to Spider Man - then you can shoot Spider Man " +
+        "and il you can place anywhere you want in the game space, be careful that there are more favorable places " +
+        "than others, if you try to shoot character other than the level you will not be left.). Positive characters " +
+        "drawn from the window where they are cycling random films have the ability to automatically shoot the " +
+        "antagonist with a nuclear weapon. And the player can lightning with more damage than the atomic weapon of" +
+        " positive characters. You know that every thundering lightning consumes you out of life, and any contact with " +
+        "the negative character is eating your life. Spor played it!\n";
+    info.style.textAlign = "justify";
     info.style.margin = "auto";
-    info.style.marginTop = "1%";
+    info.style.marginLeft = "5%";
+    info.style.marginRight = "5%";
     elem.appendChild(info);
 
     document.body.insertBefore(elem, document.body.children[0]);
