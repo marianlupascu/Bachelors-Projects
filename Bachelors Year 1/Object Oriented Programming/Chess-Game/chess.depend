@@ -1,0 +1,647 @@
+# depslib dependency file v1.0
+1492693468 source:c:\users\maryan\documents\documents\fmi\chess\horse.cpp
+	"horse.h"
+
+1492693468 c:\users\maryan\documents\documents\fmi\chess\horse.h
+	<vector>
+
+1494446171 source:c:\users\maryan\documents\documents\fmi\chess\main.cpp
+	<iostream>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	"Table.h"
+	"PieceTexture.h"
+	"Init.h"
+	"Dot.h"
+	"Texture.h"
+	"TextTexture.h"
+	"PiecesManager.h"
+	"EventManager.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\close_code.h
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476939494 c:\system manual files\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451803973 c:\system manual files\sdl2_image-2.0.1\i686-w64-mingw32\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1494417040 c:\users\maryan\documents\documents\fmi\chess\table.h
+	<SDL.h>
+	"Variables.h"
+	"Texture.h"
+	<iostream>
+	<SDL_image.h>
+	<SDL_ttf.h>
+
+1494450106 c:\users\maryan\documents\documents\fmi\chess\pieces.h
+	<vector>
+	"Table.h"
+	<SDL.h>
+
+1494411546 c:\users\maryan\documents\documents\fmi\chess\piecetexture.h
+	"Texture.h"
+
+1494445635 source:c:\users\maryan\documents\documents\fmi\chess\pieces.cpp
+	"Pieces.h"
+	<SDL_image.h>
+	<iostream>
+	"Variables.h"
+	<vector>
+	<utility>
+
+1494411546 source:c:\users\maryan\documents\documents\fmi\chess\piecetexture.cpp
+	"PieceTexture.h"
+
+1494416585 source:c:\users\maryan\documents\documents\fmi\chess\table.cpp
+	"Table.h"
+
+1493490153 c:\users\maryan\documents\documents\fmi\chess\variables.h
+	<SDL.h>
+
+1454366533 c:\system manual files\sdl2_ttf-2.0.14\i686-w64-mingw32\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1494450106 c:\users\maryan\documents\documents\fmi\chess\knight.h
+	<vector>
+	"Pieces.h"
+
+1494451569 source:c:\users\maryan\documents\documents\fmi\chess\knight.cpp
+	"Knight.h"
+	"King.h"
+
+1494564432 source:c:\users\maryan\documents\documents\fmi\chess\king.cpp
+	"King.h"
+	<iostream>
+
+1494450106 c:\users\maryan\documents\documents\fmi\chess\king.h
+	"Pieces.h"
+
+1494451652 source:c:\users\maryan\documents\documents\fmi\chess\rook.cpp
+	"Rook.h"
+	"King.h"
+
+1494450106 c:\users\maryan\documents\documents\fmi\chess\rook.h
+	"Pieces.h"
+
+1494617173 source:c:\users\maryan\documents\documents\fmi\chess\piecesmanager.cpp
+	"PiecesManager.h"
+
+1494445592 c:\users\maryan\documents\documents\fmi\chess\piecesmanager.h
+	"Pieces.h"
+	"Pawn.h"
+	"Rook.h"
+	"Knight.h"
+	"Bishop.h"
+	"Queen.h"
+	"King.h"
+	<vector>
+	<utility>
+
+1494375202 c:\users\maryan\documents\documents\fmi\chess\texture.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<iostream>
+
+1494610385 source:c:\users\maryan\documents\documents\fmi\chess\bishop.cpp
+	"Bishop.h"
+	"King.h"
+
+1494609974 c:\users\maryan\documents\documents\fmi\chess\bishop.h
+	"Pieces.h"
+	<algorithm>
+	<functional>
+
+1494324592 source:c:\users\maryan\documents\documents\fmi\chess\dot.cpp
+	"Dot.h"
+	"Variables.h"
+
+1494324592 c:\users\maryan\documents\documents\fmi\chess\dot.h
+	<SDL.h>
+	<SDL_image.h>
+	"Variables.h"
+	<iostream>
+	"Texture.h"
+
+1494614527 source:c:\users\maryan\documents\documents\fmi\chess\pawn.cpp
+	"Pawn.h"
+	"King.h"
+
+1494536373 c:\users\maryan\documents\documents\fmi\chess\pawn.h
+	"Pieces.h"
+	<algorithm>
+
+1494610559 source:c:\users\maryan\documents\documents\fmi\chess\queen.cpp
+	"Queen.h"
+	"King.h"
+
+1494450106 c:\users\maryan\documents\documents\fmi\chess\queen.h
+	"Pieces.h"
+	<functional>
+	<algorithm>
+
+1494324592 source:c:\users\maryan\documents\documents\fmi\chess\texttexture.cpp
+	"TextTexture.h"
+	"Variables.h"
+	"Texture.h"
+
+1494324592 c:\users\maryan\documents\documents\fmi\chess\texttexture.h
+	"Texture.h"
+	<SDL.h>
+	<SDL_ttf.h>
+
+1494421784 source:c:\users\maryan\documents\documents\fmi\chess\texture.cpp
+	"Texture.h"
+	"Variables.h"
+
+1494411725 source:c:\users\maryan\documents\documents\fmi\chess\init.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	"Variables.h"
+
+1494411819 c:\users\maryan\documents\documents\fmi\chess\init.h
+	"Variables.h"
+
+1494418561 c:\users\maryan\documents\documents\fmi\chess\eventmanager.h
+	<SDL.h>
+
+1494418731 source:c:\users\maryan\documents\documents\fmi\chess\eventmanager.cpp
+	"EventManager.h"
+
+1494606785 source:c:\users\maryan\documents\documents\fmi\i\chess\bishop.cpp
+	"Bishop.h"
+	"King.h"
+
+1494606374 c:\users\maryan\documents\documents\fmi\i\chess\bishop.h
+	"Pieces.h"
+	<algorithm>
+	<functional>
+
+1494446506 c:\users\maryan\documents\documents\fmi\i\chess\pieces.h
+	<vector>
+	"Table.h"
+	<SDL.h>
+
+1494413440 c:\users\maryan\documents\documents\fmi\i\chess\table.h
+	<SDL.h>
+	"Variables.h"
+	"Texture.h"
+	<iostream>
+	<SDL_image.h>
+	<SDL_ttf.h>
+
+1493486553 c:\users\maryan\documents\documents\fmi\i\chess\variables.h
+	<SDL.h>
+
+1494371602 c:\users\maryan\documents\documents\fmi\i\chess\texture.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<iostream>
+
+1494446506 c:\users\maryan\documents\documents\fmi\i\chess\king.h
+	"Pieces.h"
+
+1494320992 source:c:\users\maryan\documents\documents\fmi\i\chess\dot.cpp
+	"Dot.h"
+	"Variables.h"
+
+1494320992 c:\users\maryan\documents\documents\fmi\i\chess\dot.h
+	<SDL.h>
+	<SDL_image.h>
+	"Variables.h"
+	<iostream>
+	"Texture.h"
+
+1494415131 source:c:\users\maryan\documents\documents\fmi\i\chess\eventmanager.cpp
+	"EventManager.h"
+
+1494414961 c:\users\maryan\documents\documents\fmi\i\chess\eventmanager.h
+	<SDL.h>
+
+1494408125 source:c:\users\maryan\documents\documents\fmi\i\chess\init.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	"Variables.h"
+
+1494560832 source:c:\users\maryan\documents\documents\fmi\i\chess\king.cpp
+	"King.h"
+	<iostream>
+
+1494447969 source:c:\users\maryan\documents\documents\fmi\i\chess\knight.cpp
+	"Knight.h"
+	"King.h"
+
+1494446506 c:\users\maryan\documents\documents\fmi\i\chess\knight.h
+	<vector>
+	"Pieces.h"
+
+1494442571 source:c:\users\maryan\documents\documents\fmi\i\chess\main.cpp
+	<iostream>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	"Table.h"
+	"PieceTexture.h"
+	"Init.h"
+	"Dot.h"
+	"Texture.h"
+	"TextTexture.h"
+	"PiecesManager.h"
+	"EventManager.h"
+
+1494407946 c:\users\maryan\documents\documents\fmi\i\chess\piecetexture.h
+	"Texture.h"
+
+1494408219 c:\users\maryan\documents\documents\fmi\i\chess\init.h
+	"Variables.h"
+
+1494320992 c:\users\maryan\documents\documents\fmi\i\chess\texttexture.h
+	"Texture.h"
+	<SDL.h>
+	<SDL_ttf.h>
+
+1494441992 c:\users\maryan\documents\documents\fmi\i\chess\piecesmanager.h
+	"Pieces.h"
+	"Pawn.h"
+	"Rook.h"
+	"Knight.h"
+	"Bishop.h"
+	"Queen.h"
+	"King.h"
+	<vector>
+	<utility>
+
+1494532773 c:\users\maryan\documents\documents\fmi\i\chess\pawn.h
+	"Pieces.h"
+	<algorithm>
+
+1494446506 c:\users\maryan\documents\documents\fmi\i\chess\rook.h
+	"Pieces.h"
+
+1494446506 c:\users\maryan\documents\documents\fmi\i\chess\queen.h
+	"Pieces.h"
+	<functional>
+	<algorithm>
+
+1494610927 source:c:\users\maryan\documents\documents\fmi\i\chess\pawn.cpp
+	"Pawn.h"
+	"King.h"
+
+1494442035 source:c:\users\maryan\documents\documents\fmi\i\chess\pieces.cpp
+	"Pieces.h"
+	<SDL_image.h>
+	<iostream>
+	"Variables.h"
+	<vector>
+	<utility>
+
+1494613573 source:c:\users\maryan\documents\documents\fmi\i\chess\piecesmanager.cpp
+	"PiecesManager.h"
+
+1494407946 source:c:\users\maryan\documents\documents\fmi\i\chess\piecetexture.cpp
+	"PieceTexture.h"
+
+1494606959 source:c:\users\maryan\documents\documents\fmi\i\chess\queen.cpp
+	"Queen.h"
+	"King.h"
+
+1494448052 source:c:\users\maryan\documents\documents\fmi\i\chess\rook.cpp
+	"Rook.h"
+	"King.h"
+
+1494412985 source:c:\users\maryan\documents\documents\fmi\i\chess\table.cpp
+	"Table.h"
+
+1494320992 source:c:\users\maryan\documents\documents\fmi\i\chess\texttexture.cpp
+	"TextTexture.h"
+	"Variables.h"
+	"Texture.h"
+
+1494418184 source:c:\users\maryan\documents\documents\fmi\i\chess\texture.cpp
+	"Texture.h"
+	"Variables.h"
+

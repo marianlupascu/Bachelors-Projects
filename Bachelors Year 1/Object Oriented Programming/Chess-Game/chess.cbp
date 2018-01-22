@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="piese" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/piese" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/piese" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-fexceptions" />
+			<Add directory="../../../../../../System Manual Files/SDL2-2.0.5/i686-w64-mingw32/include/SDL2" />
+			<Add directory="../../../../../../System Manual Files/SDL2_image-2.0.1/i686-w64-mingw32/include/SDL2" />
+			<Add directory="../../../../../../System Manual Files/SDL2_ttf-2.0.14/i686-w64-mingw32/include/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2" />
+			<Add option="-lSDL2_image -lSDL2_ttf" />
+			<Add directory="../../../../../../System Manual Files/SDL2-2.0.5/i686-w64-mingw32/lib" />
+			<Add directory="../../../../../../System Manual Files/SDL2_image-2.0.1/i686-w64-mingw32/lib" />
+			<Add directory="../../../../../../System Manual Files/SDL2_ttf-2.0.14/i686-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="Bishop.cpp" />
+		<Unit filename="Bishop.h" />
+		<Unit filename="Dot.cpp" />
+		<Unit filename="Dot.h" />
+		<Unit filename="EventManager.cpp" />
+		<Unit filename="EventManager.h" />
+		<Unit filename="Init.cpp" />
+		<Unit filename="Init.h" />
+		<Unit filename="King.cpp" />
+		<Unit filename="King.h" />
+		<Unit filename="Knight.cpp" />
+		<Unit filename="Knight.h" />
+		<Unit filename="Pawn.cpp" />
+		<Unit filename="Pawn.h" />
+		<Unit filename="PieceTexture.cpp" />
+		<Unit filename="PieceTexture.h" />
+		<Unit filename="Pieces.cpp" />
+		<Unit filename="Pieces.h" />
+		<Unit filename="PiecesManager.cpp" />
+		<Unit filename="PiecesManager.h" />
+		<Unit filename="Queen.cpp" />
+		<Unit filename="Queen.h" />
+		<Unit filename="Rook.cpp" />
+		<Unit filename="Rook.h" />
+		<Unit filename="Table.cpp" />
+		<Unit filename="Table.h" />
+		<Unit filename="TextTexture.cpp" />
+		<Unit filename="TextTexture.h" />
+		<Unit filename="Texture.cpp" />
+		<Unit filename="Texture.h" />
+		<Unit filename="Variables.h" />
+		<Unit filename="dot.jpg" />
+		<Unit filename="lazy.ttf" />
+		<Unit filename="main.cpp" />
+		<Unit filename="pieces.jpg" />
+		<Unit filename="table.jpg" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
