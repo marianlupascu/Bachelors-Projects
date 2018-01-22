@@ -1,0 +1,12 @@
+pid arrive burst userType(2-administrator,1-intermediate,0-user)
+1000
+1 0 500 2
+2 1 700 2
+3 0 200 1
+4 2 60 0
+5 0 1500 0
+6 10 1000 2
+7 5 1000 1
+8 5 200 1
+9 6 4400 0
+10 8 500 0

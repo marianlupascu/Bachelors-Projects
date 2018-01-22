@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1516272503 source:c:\users\maryan\documents\documents\fmi\ii\sem i\sisteme de operare\round-robin-scheduler\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<time.h>
+	<stdbool.h>
+	<errno.h>
+
