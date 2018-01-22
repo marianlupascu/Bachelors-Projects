@@ -40,8 +40,8 @@ class Sound {
 window.onload = function Main() {
 
     try {
-        getNumberOfResources(nameOfXMLfile);
-        $(document).ajaxComplete(parseResources(nameOfXMLfile));
+        res.getNumberOfResources(nameOfXMLfile);
+        $(document).ajaxComplete(res.parseResources(nameOfXMLfile));
     }
     catch (err) {
         console.log(err.message);
@@ -71,145 +71,149 @@ function clearProgressBar() {
     document.body.removeChild(elem);
 }
 
-function getNumberOfResources(xmlFileName) {
-    $(document).ready(function () {
-        $.ajax({
-            url: xmlFileName,
-            type: "GET",
-            dataType: "xml",
-            success: function (xml) {
-                var numberOfResources = 0;
-                $xml = $(xml);
-                $images = $xml.find("image");
-                numberOfResources += $images.length;
+class Resources {
 
-                $sounds = $xml.find("sound");
-                numberOfResources += $sounds.length;
+    upgradeProgressBar(percent) {
+        var start = percent - 1;
+        var end = percent;
+        end = (end / NUMBEROFRESOURCES) * 100;
+        end = parseInt(end.toString());
+        start = (start / NUMBEROFRESOURCES) * 100;
+        start = parseInt(start.toString());
+        var elem = document.getElementById("progressBar");
+        var elemP = document.getElementById("progressCount");
+        var id = setInterval(frame(), 10);
 
-                $videos = $xml.find("video");
-                numberOfResources += $videos.length;
-
-                NUMBEROFRESOURCES = numberOfResources;
-                return numberOfResources;
-            },
-            error: function (err) {
-                alert(err);
+        function frame() {
+            if (start >= end) {
+                clearInterval(id);
+            } else {
+                start++;
+                elem.style.width = start + '%';
+                elemP.innerHTML = start + "%";
             }
-        });
-    });
-}
-
-function parseResources(xmlFileName) {
-    //getNumberOfResources(xmlFileName);
-    $(document).ready(function () {
-        $.ajax({
-            url: xmlFileName,
-            type: "GET",
-            dataType: "xml",
-            success: function (xml) {
-                var curentNumberOfResources = 0;
-                $xml = $(xml);
-                $images = $xml.find("image");
-                $images.each(function (i) {
-
-                    curentNumberOfResources++;
-                    upgradeProgressBar(curentNumberOfResources);
-                    var img = $("<div></div>");
-                    var text = $(this).text();
-                    img.get(0).style.backgroundImage = "url(" + text + ")";
-                    img.attr("id", $(this).attr("id"));
-                    var type = $(this).attr("type");
-                    switch (type) {
-                        case 'background' :
-                            backgroundsSrc.push(text);
-                            //var bg = document.getElementById("backgroundGame");
-                            //bg.style.backgroundImage = 'url(' + text + ')';
-                            break;
-                        case 'opponent' :
-                            var w = $(this).attr("w");
-                            var h = $(this).attr("h");
-                            img.get(0).style.width = w * (HEIGHT_CHARACTER / h) + 'px';
-                            img.attr("class", "character opponent");
-                            enemies.push(img.get(0));
-                            break;
-                        case 'ally' :
-                            var w = $(this).attr("w");
-                            var h = $(this).attr("h");
-                            img.get(0).style.width = w * (HEIGHT_CHARACTER / h) + 'px';
-                            img.attr("class", "character ally");
-                            allies.push(img.get(0));
-                            break;
-                        case 'player' :
-                            var w = $(this).attr("w");
-                            var h = $(this).attr("h");
-                            img.get(0).style.width = w * (HEIGHT_CHARACTER / h) + 'px';
-                            img.attr("class", "character player");
-                            img.id = "player";
-                            player = img.get(0);
-                            break;
-                        case 'movie' :
-                            moviesWallpaper.push(text);
-                            break;
-                    }
-                });
-
-                $sounds = $xml.find("sound");
-                $sounds.each(function (i) {
-
-                    curentNumberOfResources++;
-                    upgradeProgressBar(curentNumberOfResources);
-                    var sound = $("<audio></audio>");
-                    var source = $("<source>");
-                    var text = $(this).text();
-                    source.get(0).src = text;
-                    source.get(0).type = "audio/mp3";
-                    sound.attr("id", $(this).attr("id"));
-                    $(sound).append(source);
-                    var type = $(this).attr("type");
-                    switch (type) {
-                        case 'dead' :
-                            sounds.push(new Sound(sound.get(0)));
-                            break;
-                        case 'next_level' :
-                            sounds.push(new Sound(sound.get(0)));
-                            break;
-                    }
-                });
-
-
-                var elem = document.getElementById("progressBar");
-                var elemP = document.getElementById("progressCount");
-                elem.style.width = 100 + '%';
-                elemP.innerHTML = 100 + "%";
-                Rest();
-            },
-            error: function (err) {
-                alert(err);
-            }
-        });
-    });
-}
-
-function upgradeProgressBar(percent) {
-    var start = percent - 1;
-    var end = percent;
-    end = (end / NUMBEROFRESOURCES) * 100;
-    end = parseInt(end.toString());
-    start = (start / NUMBEROFRESOURCES) * 100;
-    start = parseInt(start.toString());
-    var elem = document.getElementById("progressBar");
-    var elemP = document.getElementById("progressCount");
-    var id = setInterval(frame(), 10);
-
-    function frame() {
-        if (start >= end) {
-            clearInterval(id);
-        } else {
-            start++;
-            elem.style.width = start + '%';
-            elemP.innerHTML = start + "%";
         }
     }
+
+    getNumberOfResources(xmlFileName) {
+        $(document).ready(function () {
+            $.ajax({
+                url: xmlFileName,
+                type: "GET",
+                dataType: "xml",
+                success: function (xml) {
+                    var numberOfResources = 0;
+                    var $xml = $(xml);
+                    var $images = $xml.find("image");
+                    numberOfResources += $images.length;
+
+                    var $sounds = $xml.find("sound");
+                    numberOfResources += $sounds.length;
+
+                    var $videos = $xml.find("video");
+                    numberOfResources += $videos.length;
+
+                    NUMBEROFRESOURCES = numberOfResources;
+                    return numberOfResources;
+                },
+                error: function (err) {
+                    alert(err);
+                }
+            });
+        });
+    };
+
+    parseResources(xmlFileName) {
+        //getNumberOfResources(xmlFileName);
+        var myPointer = this;
+        $(document).ready(function () {
+            $.ajax({
+                url: xmlFileName,
+                type: "GET",
+                dataType: "xml",
+                success: function (xml) {
+                    var curentNumberOfResources = 0;
+                    var $xml = $(xml);
+                    var $images = $xml.find("image");
+                    $images.each(function (i) {
+
+                        curentNumberOfResources++;
+                        myPointer.upgradeProgressBar(curentNumberOfResources);
+                        var img = $("<div></div>");
+                        var text = $(this).text();
+                        img.get(0).style.backgroundImage = "url(" + text + ")";
+                        img.attr("id", $(this).attr("id"));
+                        var type = $(this).attr("type");
+                        switch (type) {
+                            case 'background' :
+                                backgroundsSrc.push(text);
+                                //var bg = document.getElementById("backgroundGame");
+                                //bg.style.backgroundImage = 'url(' + text + ')';
+                                break;
+                            case 'opponent' :
+                                var w = $(this).attr("w");
+                                var h = $(this).attr("h");
+                                img.get(0).style.width = w * (HEIGHT_CHARACTER / h) + 'px';
+                                img.attr("class", "character opponent");
+                                enemies.push(img.get(0));
+                                break;
+                            case 'ally' :
+                                var w = $(this).attr("w");
+                                var h = $(this).attr("h");
+                                img.get(0).style.width = w * (HEIGHT_CHARACTER / h) + 'px';
+                                img.attr("class", "character ally");
+                                allies.push(img.get(0));
+                                break;
+                            case 'player' :
+                                var w = $(this).attr("w");
+                                var h = $(this).attr("h");
+                                img.get(0).style.width = w * (HEIGHT_CHARACTER / h) + 'px';
+                                img.attr("class", "character player");
+                                img.id = "player";
+                                player = img.get(0);
+                                break;
+                            case 'movie' :
+                                moviesWallpaper.push(text);
+                                break;
+                        }
+                    });
+
+                    var $sounds = $xml.find("sound");
+                    $sounds.each(function (i) {
+
+                        curentNumberOfResources++;
+                        myPointer.upgradeProgressBar(curentNumberOfResources);
+                        var sound = $("<audio></audio>");
+                        var source = $("<source>");
+                        var text = $(this).text();
+                        source.get(0).src = text;
+                        source.get(0).type = "audio/mp3";
+                        sound.attr("id", $(this).attr("id"));
+                        $(sound).append(source);
+                        var type = $(this).attr("type");
+                        switch (type) {
+                            case 'dead' :
+                                sounds.push(new Sound(sound.get(0)));
+                                break;
+                            case 'next_level' :
+                                sounds.push(new Sound(sound.get(0)));
+                                break;
+                        }
+                    });
+
+
+                    var elem = document.getElementById("progressBar");
+                    var elemP = document.getElementById("progressCount");
+                    elem.style.width = 100 + '%';
+                    elemP.innerHTML = 100 + "%";
+                    Rest();
+                },
+                error: function (err) {
+                    alert(err);
+                }
+            });
+        });
+    };
 }
 
 function appendProgressBartoCharacters() {
@@ -1465,3 +1469,5 @@ function saveInLocalStorage() {
         console.log("Sorry, your browser does not support web storage...");
     }
 }
+
+var res = new Resources();
