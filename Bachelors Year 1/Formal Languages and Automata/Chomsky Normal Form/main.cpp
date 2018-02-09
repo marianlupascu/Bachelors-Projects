@@ -13,9 +13,13 @@ int main()
 
     fin >> G;
 
+    cout << "Initial:" << '\n' << G << '\n';
+
     G.Transform_into_Chomsky_Normal_Form();
 
     fout << G;
+
+    cout << "la final:" << '\n' << G << '\n';
 
     return 0;
 }
