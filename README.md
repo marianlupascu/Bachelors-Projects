@@ -1,3 +1,4 @@
+
 # School-Projects
 > This repository contains college projects 
 
@@ -54,6 +55,24 @@
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/tutorial.PNG?raw=true)
 </details>
 
+<details><summary> Robotics with Arduino </summary>
+
+* [M&M Sorter](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M%26M%20Sorter)
+
+  `Arduino` Initially, colored candies are held in a charger and fall in turn (they are taken over by a stepper-motor).
+Then it is analyzed by the color sensor that detects its color.
+Then the servomotor picks up the candy, rotates to the candy color container.
+
+* [Led matrix Game](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix)
+
+  `Arduino` The game is a deviation from Flappy Bird. There are only 9 levels + level 10 in which the boss comes. A level ranging from 1 min to 3-4 mins at the last level that keeps the boss up until all his life is consumed. The boss is invincible, the goal is to survive as long as the score is gathered with the Euclidean distance from bird to boss.
+
+Well, the start is input from the user, the joystick selects rules, credits or start-game. The end will be the same: at the end it shows the information about how it was played (score, lives, level) and this information disappears with a user input. He has difficulty, lives and score.
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix/img1.jpg?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix/img2.jpg?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix/img3.jpg?raw=true)
+</details>
+
 ### Year 1
 
 <details><summary> Formal Languages and Automata </summary>
@@ -104,5 +123,5 @@ C->AB | a
 </details>
 
 <p align="center">
-	<span>Lupascu Marian </span> <img src="https://github.com/marianlupascu/School-	Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/img/mini-logo.jpg?raw=true">
+	<span>Lupascu Marian </span> <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/img/mini-logo.png?raw=true">
 </p>
