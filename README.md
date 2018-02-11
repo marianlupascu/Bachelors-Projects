@@ -83,6 +83,9 @@ Well, the start is input from the user, the joystick selects rules, credits or s
 * [Representation and Interpretation of Student, Fisher and chi-square ](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Probabilities%20%26%20Statistics/Representation%20and%20Interpretation%20of%20Student%2C%20Fisher%20and%20chi-square%20distributions)
 
   `R` Graphic representation for probability density and distribution function for a set of parameters for Student, Fisher and Chi-square distributions, indicating their properties and then testing statistical assumptions.
+  >Contributors:
+  >  * Banu Alexandru
+  >  * Costan Miriam
   
 * [Others ](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Probabilities%20%26%20Statistics)
 </details>
