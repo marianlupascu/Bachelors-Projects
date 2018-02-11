@@ -1,32 +1,98 @@
-
 # School-Projects
-## This repository contains college projects
-### Bachelors
-#### Year 2
+> This repository contains college projects 
 
-<details><summary> TAP </summary>
+![LM Logo](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/img/LOGO%20LM.png?raw=true)
+## Bachelors
+### Year 2
 
-*         
+<details><summary> Computational Geometry </summary>
+
+* [Convex Hull Graham's Scan Andrews version](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Computational%20Geometry/Convex%20Hull%20Graham%20Scan%20Andrews%20version) 
+`Java`  Graham's scan is a method of finding the convex hull of a finite set of points in the plane with time complexity O(n log n). The Andrews variant involves two-stage construction: first determine the infinitely superior convection (drawn with green, the final version and red what was tested) and the inferior convex winders (drawn in blue, the final version and in yellow what was tested and do not apatine the convex lower convex).
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Computational%20Geometry/Convex%20Hull%20Graham%20Scan%20Andrews%20version/start.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Computational%20Geometry/Convex%20Hull%20Graham%20Scan%20Andrews%20version/in%20work.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Computational%20Geometry/Convex%20Hull%20Graham%20Scan%20Andrews%20version/final.PNG?raw=true)
+  >Contributors:
+  >  * Gorneanu Andrei
+  >  * Dospra Cristian
 </details>
 
-#### Year 1
+<details><summary> Operating Systems </summary>
+
+* [Round-Robin-Scheduler](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Operating%20Systems/Round-Robin-Scheduler) 
+`C`  To schedule processes fairly, a **round-robin scheduler** generally employs time-sharing, giving each job a time slot or quantum (its allowance of CPU time), and interrupting the job if it is not completed by then. The job is resumed next time a time slot is assigned to that process. If the process terminates or changes its state to waiting during its attributed time quantum, the scheduler selects the first process in the ready queue to execute. In the absence of time-sharing, or if the quanta were large relative to the sizes of the jobs, a process that produced large jobs would be favoured over other processes.
+
+  Round-robin algorithm is starvatin-free and a pre-emptive algorithm as the scheduler forces the process out of the CPU once the time quota expires. We have predefined three types of users for which quantum time differs depending on the importance: a user has 1000 clock beats while an administrator has 3000 clock beats
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Operating%20Systems/Round-Robin-Scheduler/start.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Operating%20Systems/Round-Robin-Scheduler/final.PNG?raw=true)
+  >Contributors:
+  >  * Costan Miriam
+  >  * Gorneanu Andrei
+</details>
+
+<details><summary> Web Techniques </summary>
+
+* [Site to buy / download movies](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project) 
+`HTML + CSS`  A site to download / buy movies on subscriptions. At the moment, he has just a description and details for only eight fime.
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/screenshots/header.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/screenshots/about.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/screenshots/movies.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/screenshots/pricing.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/screenshots/contact.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/screenshots/1movie.PNG?raw=true)
+
+* [Game with MARVEL characters](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project)
+`javascript` The game contains five levels, each of which is related to a Marvel series movie. The protagonist is Emma Frost. The objective of the game is to pass all 5 levels. In each level you can draw positive characters from the top right of the game, only if the negative character is from that movie (for example, if you are level 1 - which is related to Spider Man - then you can shoot Spider Man and il you can place anywhere you want in the game space, be careful that there are more favorable places than others, if you try to shoot character other than the level you will not be left.). Positive characters drawn from the window where they are cycling random films have the ability to automatically shoot the antagonist with a nuclear weapon. And the player can lightning with more damage than the atomic weapon of positive characters. You know that every thundering lightning consumes you out of life, and any contact with the negative character is eating your life. 
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/menu.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/game.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/credits.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/options.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/tutorial.PNG?raw=true)
+</details>
+
+### Year 1
 
 <details><summary> Formal Languages and Automata </summary>
 
-* [Chomsky Normal Form](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/Chomsky%20Normal%20Form)
+* [Chomsky Normal Form](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/Chomsky%20Normal%20Form) 
+`C++`  Transform a Context-free grammar into it is **Chomsky Normal Form (CNF)**, in four steps.
 * [CYK Parsing](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/CYK%20Parsing%20-Cocke-Younger-Kasami)
+`C++` The **Cocke–Younger–Kasami** algorithm (alternatively called **CYK**, or **CKY**) is a parsing algorithm for context-free grammars, named after its inventors, John Cocke, Daniel Younger and Tadao Kasami. It employs bottom-up parsing and dynamic programming. The algorithm requires the context-free grammar to be rendered into Chomsky normal form (CNF), because it tests for possibilities to split the current sequence in half. Any context-free grammar that does not generate the extineiden 27 production rules of the forms ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/13dc432701b1477bc9ba32b0d71c58ecf2d44d9e)  and ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/d006db33dce212be6b03190185ee63f78a27a055).  
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/CYK%20Parsing%20-Cocke-Younger-Kasami/CYK-Parsing.PNG?raw=true)
+  >Grammar is :
+S->AB | BC
+A->BA | a
+B->CC | b
+C->AB | a
 * [DFA Minimal](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/DFA%20Minimal)
+`C++` For any given DFA **A**, we can build a DFA **A′** that accepts the same language using the minimum number of states needed. Since **A** has more states than **A′**, we need to figure out which states we have to remove.
 * [Others](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata)
 </details>
 
 <details><summary> Geometry </summary>
 
 * [Gauss Elimination Method Algorithm](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Geometry/Gauss%20Elimination%20Method%20Algorithm)
+`C++` The Gauss Elimination Method Algorithm has as input a 2 nd polynomial in n variables represented as a matrix and has as output the square shape of this polynomial.
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%201/Geometry/Gauss%20Elimination%20Method%20Algorithm/Gauss_method.PNG?raw=true)
 * [Gram-Schmidt Process Algorithm](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Geometry/Gram-Schmidt%20Process%20Algorithm)
+`C++` Gram–Schmidt process is a method for orthonormalising a set of vectors in an inner product space, most commonly the Euclidean space Rn equipped with the standard inner product. The Gram–Schmidt process takes a finite, linearly independent set S = {v1, ..., vk} for k ≤ n and generates an orthogonal set S′ = {u1, ..., uk} that spans the same k-dimensional subspace of R^n  as S
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%201/Geometry/Gram-Schmidt%20Process%20Algorithm/Gram-Schmidt.PNG?raw=true)
 </details>
 
 <details><summary> Object Oriented Programming </summary>
 
 * [Chess-Game](https://github.com/marianlupascu/Chess-Game)
+`C++` A simple chess game made in C ++. For graphics, an SDL library was used.
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%201/Object%20Oriented%20Programming/Chess-Game/screenshots/start.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%201/Object%20Oriented%20Programming/Chess-Game/screenshots/in%20play.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%201/Object%20Oriented%20Programming/Chess-Game/screenshots/when%20in%20chess.PNG?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%201/Object%20Oriented%20Programming/Chess-Game/screenshots/mat.PNG?raw=true)
+  >Contributors:
+  >  * Cheval Horatiu Andrei
+  >  * Gorneanu Andrei
 * [Others](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Object%20Oriented%20Programming)
 </details>
+
+<p align="center">
+	<span>Lupascu Marian </span> <img src="https://github.com/marianlupascu/School-	Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20P	roject/img/sigla.png?raw=true" alt = "logo" width = "50px">
+</p>
