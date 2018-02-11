@@ -66,7 +66,6 @@ Then the servomotor picks up the candy, rotates to the candy color container.
 * [Led matrix Game](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix)
 
   `Arduino` The game is a deviation from Flappy Bird. There are only 9 levels + level 10 in which the boss comes. A level ranging from 1 min to 3-4 mins at the last level that keeps the boss up until all his life is consumed. The boss is invincible, the goal is to survive as long as the score is gathered with the Euclidean distance from bird to boss.
-
 Well, the start is input from the user, the joystick selects rules, credits or start-game. The end will be the same: at the end it shows the information about how it was played (score, lives, level) and this information disappears with a user input. He has difficulty, lives and score.
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix/img1.jpg?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix/img2.jpg?raw=true)
@@ -85,10 +84,14 @@ Well, the start is input from the user, the joystick selects rules, credits or s
   `C++` The **Cocke–Younger–Kasami** algorithm (alternatively called **CYK**, or **CKY**) is a parsing algorithm for context-free grammars, named after its inventors, John Cocke, Daniel Younger and Tadao Kasami. It employs bottom-up parsing and dynamic programming. The algorithm requires the context-free grammar to be rendered into Chomsky normal form (CNF), because it tests for possibilities to split the current sequence in half. Any context-free grammar that does not generate the extineiden 27 production rules of the forms ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/13dc432701b1477bc9ba32b0d71c58ecf2d44d9e)  and ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/d006db33dce212be6b03190185ee63f78a27a055).  
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/CYK%20Parsing%20-Cocke-Younger-Kasami/CYK-Parsing.PNG?raw=true)
   >Grammar is :
-S->AB | BC
-A->BA | a
-B->CC | b
-C->AB | a
+  >
+  >S->AB | BC
+  >
+  >A->BA | a
+  >
+  >B->CC | b
+  >
+  >C->AB | a
 * [DFA Minimal](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Formal%20Languages%20and%20Automata/DFA%20Minimal)
 
   `C++` For any given DFA **A**, we can build a DFA **A′** that accepts the same language using the minimum number of states needed. Since **A** has more states than **A′**, we need to figure out which states we have to remove.

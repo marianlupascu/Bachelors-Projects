@@ -1,0 +1,1 @@
+Graphically represent the probability density and distribution function (in two adjacent graphs) for a set of parameters of choice (at least 4 with representations in the same graph) for Student, Fisher and chi-square distributions. Identify their properties and give an example, building a program in R, using them in testing statistical assumptions.

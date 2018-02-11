@@ -1,0 +1,6 @@
+Import the MASS library into R and use the "painters" and "faithful" datasets. Perform the following operations in R:
+a) View data sets
+b) Determine the distribution of school school frequencies in the pictorial data set and the eruption times in the "faithful" data set,
+c) Graphical representation by two separate methods of information in the two sets of data
+d) Determine the average, median, variance, and quartz relative to the ramp times in the "believers" dataset, then compile the boxplot
+e) Determine the correlation coefficient for the two variables in the "faithful" data set
