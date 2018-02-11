@@ -1,4 +1,3 @@
-
 # School-Projects
 > This repository contains college projects 
 
@@ -70,6 +69,22 @@ Well, the start is input from the user, the joystick selects rules, credits or s
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix/img1.jpg?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix/img2.jpg?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix/img3.jpg?raw=true)
+</details>
+
+<details><summary> Probabilities & Statistics </summary>
+
+* [Modelling Linear Regression](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Probabilities%20%26%20Statistics/Modelling%20Linear%20Regression)
+
+  `R`Using the Cars93 dataset in the MASS library, we implement a linear regression model. We estimate the regression parameters and comment on the results. We apply three methods to evaluate the accuracy of the model and make a prediction.
+  >Contributors:
+  >  * Banu Alexandru
+  >  * Costan Miriam
+
+* [Representation and Interpretation of Student, Fisher and chi-square ](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Probabilities%20%26%20Statistics/Representation%20and%20Interpretation%20of%20Student%2C%20Fisher%20and%20chi-square%20distributions)
+
+  `R` Graphic representation for probability density and distribution function for a set of parameters for Student, Fisher and Chi-square distributions, indicating their properties and then testing statistical assumptions.
+  
+* [Others ](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Probabilities%20%26%20Statistics)
 </details>
 
 ### Year 1
