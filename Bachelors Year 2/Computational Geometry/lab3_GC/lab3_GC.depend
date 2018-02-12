@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1509799725 source:c:\users\maryan\documents\code blocks's programs\teste colocviu oop\lab3_gc\main.cpp
+	<iostream>
+	<fstream>
+	<utility>
+	<algorithm>
+

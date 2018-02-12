@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1513336405 source:c:\users\maryan\documents\documents\fmi\ii\sem i\tehnici avansate de programare\laboratoare\lab pd\4-pd\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<limits>
+

@@ -1,0 +1,16 @@
+DB9 Volante
+Anul inceperii productiei: 2009
+Anul opririi productiei: 2012
+Tipul caroseriei: Decapotabila
+Numãr de usi: 2
+Numãr de scaune: 4
+Transmisie: Automata
+Numarul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 517 CP
+Tortiune maxima: 620 Nm
+Acceleratia de la 0 la 100 km/h: 4.6 secunde
+Viteza maxima: 295 km/h
+Tipul de combustibil: Benzina
+Pret: 200000 - 250000 L
+Web: http://www.astonmartin.com/heritage/past-models/dbs-v12

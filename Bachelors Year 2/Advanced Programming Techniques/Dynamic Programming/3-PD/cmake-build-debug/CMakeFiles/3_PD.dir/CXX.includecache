@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab PD/3-PD/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+

@@ -1,0 +1,16 @@
+Vanquish
+Anul inceperii productiei: 2001
+Anul opririi productiei: 2007
+Tipul caroseriei: Coupe
+Numãr de usi: 2
+Numãr de scaune: 2
+Transmisie: Manuala
+Numãrul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 577 CP
+Tortiune maxima: 630 Nm
+Acceleratia de la 0 la 100 km/h: 4.8 secunde
+Viteza maxima: 323 km/h
+Tipul de combustibil: Benzina
+Pret: 250000 - 300000 L
+Web: http://www.astonmartin.com/heritage/past-models/vanquish

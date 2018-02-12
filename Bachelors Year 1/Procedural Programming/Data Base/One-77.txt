@@ -1,0 +1,16 @@
+One 77
+Anul inceperii productiei: 2010
+Anul opririi productiei: 2012
+Tipul caroseriei: Coupe
+Numãr de usi: 2
+Numãr de scaune: 2
+Transmisie: Automata
+Numãrul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 760 CP
+Tortiune maxima: 750 Nm
+Acceleratia de la 0 la 100 km/h: 3.7 secunde
+Viteza maxima: 354 km/h
+Tipul de combustibil: Benzina
+Pret: 1400000 - 1900000 L
+Web: http://www.astonmartin.com/heritage/past-models/one-77

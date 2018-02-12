@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab Divide/3-divide/main.cpp
+iostream
+-
+vector
+-
+fstream
+-
+

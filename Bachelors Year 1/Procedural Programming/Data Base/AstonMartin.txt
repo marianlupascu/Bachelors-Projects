@@ -1,0 +1,101 @@
+V12 ZAGATO
+Anul inceperii productiei: 2011
+Anul opririi productiei: 2012
+Tipul caroseriei: Coupe
+Numãr de usi: 2
+Numãr de scaune: 4
+Transmisie: Manuala
+Numãrul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 517 CP
+Tortiune maxima: 570 Nm
+Acceleratia de la 0 la 100 km/h: 4.2 secunde
+Viteza maxima: 305 km/h
+Tipul de combustibil: Benzina
+Pret: 330000 - 396000 L
+Web:http: //www.astonmartin.com/heritage/past-models/v12-zagato
+
+ONE-77
+Anul inceperii productiei: 2010
+Anul opririi productiei: 2012
+Tipul caroseriei: Coupe
+Numãr de usi: 2
+Numãr de scaune: 2
+Transmisie: Automata
+Numãrul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 760 CP
+Tortiune maxima: 750 Nm
+Acceleratia de la 0 la 100 km/h: 3.7 secunde
+Viteza maxima: 354 km/h
+Tipul de combustibil: Benzina
+Pret: 1400000 - 1900000 L
+Web: http://www.astonmartin.com/heritage/past-models/one-77
+
+DB9 VOLANTE
+Anul inceperii productiei: 2009
+Anul opririi productiei: 2012
+Tipul caroseriei: Decapotabila
+Numãr de usi: 2
+Numãr de scaune: 4
+Transmisie: Automata
+Numãrul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 517 CP
+Tortiune maxima: 620 Nm
+Acceleratia de la 0 la 100 km/h: 4.6 secunde
+Viteza maxima: 295 km/h
+Tipul de combustibil: Benzina
+Pret: 200000 - 250000 L
+Web: http://www.astonmartin.com/heritage/past-models/dbs-v12
+
+DBS COUPE
+Anul inceperii productiei: 2007
+Anul opririi productiei: 2012
+Tipul caroseriei: Coupe
+Numãr de usi: 2
+Numãr de scaune: 4
+Transmisie: Automata
+Numãrul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 517 CP
+Tortiune maxima: 620 Nm
+Acceleratia de la 0 la 100 km/h: 4.6 secunde
+Viteza maxima: 295 km/h
+Tipul de combustibil: Benzina
+Pret: 100000 - 140000 L
+Web: http://www.astonmartin.com/heritage/past-models/dbs-v12
+
+VANQUISH
+Anul inceperii productiei: 2001
+Anul opririi productiei: 2007
+Tipul caroseriei: Coupe
+Numãr de usi: 2
+Numãr de scaune: 2
+Transmisie: Manuala
+Numãrul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 577 CP
+Tortiune maxima: 630 Nm
+Acceleratia de la 0 la 100 km/h: 4.8 secunde
+Viteza maxima: 323 km/h
+Tipul de combustibil: Benzina
+Pret: 250000 - 300000 L
+Web: http://www.astonmartin.com/heritage/past-models/vanquish
+
+RAPIDE S
+Anul inceperii productiei: 2014
+Anul opririi productiei: 2016
+Tipul caroseriei: Sedan
+Numãr de usi: 2
+Numãr de scaune: 4
+Transmisie: Automata
+Numãrul de viteze: 8
+Numar de cilindri: 12
+Putere maxima: 560 CP
+Tortiune maxima: 630 Nm
+Acceleratia de la 0 la 100 km/h: 4.4 secunde
+Viteza maxima: 327 km/h
+Tipul de combustibil: Benzina
+Pret: 175000 - 250000 L
+Web: http://www.astonmartin.com/en/cars/rapide-s

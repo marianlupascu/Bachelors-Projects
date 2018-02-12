@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab Greedy/2/main.cpp
+iostream
+-
+fstream
+-
+algorithm
+-
+vector
+-
+queue
+-
+iomanip
+-
+

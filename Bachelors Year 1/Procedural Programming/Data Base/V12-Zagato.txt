@@ -1,0 +1,16 @@
+V12 Zagato
+Anul inceperii productiei: 2011
+Anul opririi productiei: 2012
+Tipul caroseriei: Coupe
+Numãr de usi: 2
+Numãr de scaune: 4
+Transmisie: Manuala
+Numãrul de viteze: 6
+Numar de cilindri: 12
+Putere maxima: 517 CP
+Tortiune maxima: 570 Nm
+Acceleratia de la 0 la 100 km/h: 4.2 secunde
+Viteza maxima: 305 km/h
+Tipul de combustibil: Benzina
+Pret: 330000 - 396000 L
+Web:http: //www.astonmartin.com/heritage/past-models/v12-zagato

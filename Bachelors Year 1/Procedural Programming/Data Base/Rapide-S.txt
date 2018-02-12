@@ -1,0 +1,16 @@
+Rapide S
+Anul inceperii productiei: 2014
+Anul opririi productiei: 2016
+Tipul caroseriei: Sedan
+Numãr de usi: 2
+Numãr de scaune: 4
+Transmisie: Automata
+Numãrul de viteze: 8
+Numar de cilindri: 12
+Putere maxima: 560 CP
+Tortiune maxima: 630 Nm
+Acceleratia de la 0 la 100 km/h: 4.4 secunde
+Viteza maxima: 327 km/h
+Tipul de combustibil: Benzina
+Pret: 175000 - 250000 L
+Web: http://www.astonmartin.com/en/cars/rapide-s
