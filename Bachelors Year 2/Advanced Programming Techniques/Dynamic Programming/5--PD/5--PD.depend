@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1513633861 source:c:\users\maryan\documents\documents\fmi\ii\sem i\tehnici avansate de programare\laboratoare\lab pd\5--pd\main.cpp
-	<iostream>
-	<fstream>
-	<vector>
-	<limits>
-

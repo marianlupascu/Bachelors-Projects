@@ -1,3 +1,0 @@
-C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab PD/5-PD/cmake-build-debug/CMakeFiles/5_PD.dir
-C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab PD/5-PD/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab PD/5-PD/cmake-build-debug/CMakeFiles/rebuild_cache.dir

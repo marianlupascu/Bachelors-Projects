@@ -1,3 +1,0 @@
-C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab Divide/2-divide/cmake-build-debug/CMakeFiles/2_divide.dir
-C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab Divide/2-divide/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Maryan/Documents/Documents/FMI/II/SEM I/Tehnici Avansate de Programare/Laboratoare/Lab Divide/2-divide/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-C:\Users\Maryan\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\172.4343.16\bin\cmake\bin\cmake.exe -E remove -f CMakeFiles\5_PD.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\5_PD.dir/objects.a @CMakeFiles\5_PD.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\5_PD.dir/objects.a -Wl,--no-whole-archive  -o 5_PD.exe -Wl,--out-implib,lib5_PD.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\5_PD.dir\linklibs.rsp

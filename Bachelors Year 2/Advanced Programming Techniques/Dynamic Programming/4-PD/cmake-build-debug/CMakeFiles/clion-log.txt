@@ -1,1 +1,0 @@
-CMakeLists.txt not found in C:\Users\Maryan\Documents\Documents\FMI\II\SEM I\Tehnici Avansate de Programare\Laboratoare\Lab PD\4-PD
