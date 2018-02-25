@@ -2,7 +2,7 @@
 
 # M&M Sorter
 
-:link: [The list of necessary items](https://docs.google.com/document/d/1kxodLAJLGkm1ro1c2_9M5vvlxAfv8lFYGnMvJd8eEiU/edit?usp=sharing), and documentation is in romanian.
+:link: [The list of necessary items](https://docs.google.com/spreadsheets/d/1Q7FF3S4HWYS7HdumrN-qn6-QVmrpno_l1eS3zsmzjjE/edit), and [documentation](https://docs.google.com/document/d/1kxodLAJLGkm1ro1c2_9M5vvlxAfv8lFYGnMvJd8eEiU/edit?usp=sharing) is in romanian.
 
 [![Video Link](http://intranet.tuck.dartmouth.edu/assets/img/tc-img-grid-video.png)](https://drive.google.com/open?id=1Tku_jSl2cBDdhYhFvjOPgxOAxMOkLSOl)
 
