@@ -7,9 +7,9 @@
 [![Video Link](http://intranet.tuck.dartmouth.edu/assets/img/tc-img-grid-video.png)](https://drive.google.com/open?id=1Tku_jSl2cBDdhYhFvjOPgxOAxMOkLSOl)
 
 <div style="float: left;">
-  <img src="img1.jpg" width="33%"/>
-  <img src="img2.jpg" width="33%"/>
-  <img src="img3.jpg" width="33%"/>
+  <img src="1.jpg" width="33%"/>
+  <img src="2.jpg" width="33%"/>
+  <img src="3.jpg" width="33%"/>
 </div>
 
 ## Information :page_facing_up:
