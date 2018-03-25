@@ -7,6 +7,15 @@
 [![Video Link](http://intranet.tuck.dartmouth.edu/assets/img/tc-img-grid-video.png)](https://drive.google.com/open?id=1Tku_jSl2cBDdhYhFvjOPgxOAxMOkLSOl)
 
 <div style="float: left;">
+  <img src="4.jpg" width="49%"/>
+  <img src="5.jpg" width="49%"/>
+</div>
+
+<div style="float: left;">
+  <img src="6.jpg" width="99%"/>
+</div>
+
+<div style="float: left;">
   <img src="1.jpg" width="33%"/>
   <img src="2.jpg" width="33%"/>
   <img src="3.jpg" width="33%"/>
