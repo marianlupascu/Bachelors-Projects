@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="545.0" maxWidth="700.0" minHeight="545.0" minWidth="700.0" prefHeight="545.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar blendMode="EXCLUSION" VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Quit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Undo" />
+                        <MenuItem mnemonicParsing="false" text="Redo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Cut" />
+                        <MenuItem mnemonicParsing="false" text="Copy" />
+                        <MenuItem mnemonicParsing="false" text="Paste" />
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Select All" />
+                        <MenuItem mnemonicParsing="false" text="Unselect All" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About SpaceChat" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label layoutX="133.0" layoutY="192.0" text="Username: " textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="15.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="529.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/Space-45-Night-by-Seth-Eckert.gif" />
+                    </image>
+                </ImageView>
+                <PasswordField fx:id="passwordField" layoutX="227.0" layoutY="226.0" prefHeight="25.0" prefWidth="290.0" promptText="password" />
+                <TextField fx:id="usernameField" layoutX="227.0" layoutY="191.0" prefHeight="25.0" prefWidth="290.0" promptText="nickname" />
+                <Label layoutX="133.0" layoutY="227.0" text="Password:" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="133.0" layoutY="286.0" text="HostName:" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="133.0" layoutY="321.0" text="Port:" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="227.0" layoutY="116.0" text="SpaceChat" textFill="WHITE">
+                    <font>
+                        <Font name="Neuropol X Bold" size="60.0" />
+                    </font>
+                </Label>
+                <Label layoutX="317.0" layoutY="495.0" text="© Lupascu Marian" textFill="WHITE">
+                    <font>
+                        <Font name="Neuropol X Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Button layoutX="322.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#getInformations" text="Connect">
+                    <font>
+                        <Font name="Neuropol X Bold" size="20.0" />
+                    </font>
+                </Button>
+            <Label layoutX="133.0" layoutY="192.0" text="Username:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="localHostField" layoutX="227.0" layoutY="284.0" prefHeight="25.0" prefWidth="290.0" promptText="Local Host" text="localhost" />
+            <TextField fx:id="portNumberField" layoutX="227.0" layoutY="319.0" prefHeight="25.0" prefWidth="290.0" promptText="Port Number" text="500" />
+            <Label fx:id="warmingMessagesField" alignment="CENTER" layoutX="71.0" layoutY="424.0" prefHeight="62.0" prefWidth="599.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@LoginClient.css" />
+    </stylesheets>
+</VBox>

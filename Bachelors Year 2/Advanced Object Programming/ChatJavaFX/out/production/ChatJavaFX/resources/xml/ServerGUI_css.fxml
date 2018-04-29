@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="620.0" minHeight="620.0" prefHeight="620.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar blendMode="EXCLUSION" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane layoutX="800.0" layoutY="600.0" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="603.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/gif-dribbble-space.gif" />
+               </image>
+            </ImageView>
+            <BorderPane layoutX="1.0" layoutY="-1.0" prefHeight="606.0" prefWidth="797.0">
+               <top>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="119.0" prefWidth="509.0" text="Space Chat - SERVER GUI" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="40.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ImageView fitHeight="107.0" fitWidth="125.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/favicon.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="60.0" prefWidth="797.0">
+                           <children>
+                              <Label prefHeight="62.0" prefWidth="234.0" text="Port Number:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="30.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="portNumberTextField" blendMode="SOFT_LIGHT" prefHeight="43.0" prefWidth="262.0" promptText="500" text="500">
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="switchButton" blendMode="SOFT_LIGHT" mnemonicParsing="false" onAction="#switchContext" prefHeight="41.0" prefWidth="125.0" text="Start">
+                                 <HBox.margin>
+                                    <Insets left="25.0" top="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="25.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+               <left>
+                  <ListView fx:id="eventsListView" blendMode="SOFT_LIGHT" prefHeight="356.0" prefWidth="283.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="50.0" left="50.0" right="25.0" />
+                     </BorderPane.margin>
+                  </ListView>
+               </left>
+               <center>
+                  <ListView fx:id="chatEventsListView" blendMode="SOFT_LIGHT" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="50.0" left="25.0" right="50.0" />
+                     </BorderPane.margin>
+                  </ListView>
+               </center>
+            </BorderPane>
+         </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@ServerGUI.css" />
+  </stylesheets>
+</VBox>
