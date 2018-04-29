@@ -64,19 +64,19 @@ Then it is analyzed by the color sensor that detects its color.
 Then the servomotor picks up the candy, rotates to the candy color container.
 Sorting is done in 2 stages, namely: the first stage, which involves the sorting of yellow and brown colors, and the remaining candy will be put in all the recipes, then if they are 5 consecutive rows in the color sensor the absence of the bumble beans can pass at Stage 2, alerting the user by moving the redistribution bridge of the candy 5 times. Step 2 involves sorting the other three colors: red, green and blue. :boom:
 	<div style="float: left;">
-  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/4.jpg?raw=true" width="50%"/>
-  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/5.jpg?raw=true" width="50%"/>
+  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/4.jpg?raw=true" width="49%"/>
+  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/5.jpg?raw=true" width="49%"/>
 	</div>
 
 	<div style="float: left;">
-  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/6.jpg?raw=true" width="100%"/>
-</div>
+  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/6.jpg?raw=true" width="99%"/>
+	</div>	
 	
 	<div style="float: left;">
-  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/1.jpg?raw=true" width="33.3%"/>
-  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/2.jpg?raw=true" width="33.3%"/>
-  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/3.jpg?raw=true" width="33.3%"/>
-</div>
+  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/1.jpg?raw=true" width="32.8%"/>
+  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/2.jpg?raw=true" width="32.8%"/>
+  <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Robotics%20with%20Arduino/M&M%20Sorter/3.jpg?raw=true" width="32.8%"/>
+	</div>
 
 * [Led matrix Game](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Robotics%20with%20Arduino/Led%20matrix)
 
