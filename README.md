@@ -1,10 +1,19 @@
 
+
 # School-Projects
 > This repository contains college projects 
 
 ![LM Logo](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/img/LOGO%20LM.png?raw=true)
 ## Bachelors
 ### Year 2
+
+<details><summary> Advanced Object Programming </summary>
+
+* [SpaceChat](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX) 
+
+  `Java`  :earth_africa: **SpaceChat** is a chat that involves a server and multiple clients who can communicate with each other via the server. The server is created on a specific port and clients can connect to it. The options of each client include: viewing all clients, log out, send a message. :boom:
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX/presentGif.gif?raw=true)
+</details>
 
 <details><summary> Computational Geometry </summary>
 
