@@ -3,15 +3,12 @@ package controllers;
 import chat.ClientGUI;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextField;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.lang.String;
-import java.lang.System;
-import java.lang.Integer;
 
 public class ControllerForLoginClient implements Initializable {
 
@@ -36,11 +33,11 @@ public class ControllerForLoginClient implements Initializable {
     private int port;
     private ClientGUI clientGUI;
 
-    public ControllerForLoginClient(){
+    public ControllerForLoginClient() {
         this(null);
     }
 
-    public ControllerForLoginClient(ClientGUI clientGUI){
+    public ControllerForLoginClient(ClientGUI clientGUI) {
         this.clientGUI = clientGUI;
         userName = "";
         password = "";
@@ -61,27 +58,30 @@ public class ControllerForLoginClient implements Initializable {
             return;
         }
 
-        if(port <= 0) {
+        if (port <= 0) {
             warmingMessagesField.setText("Invalid port number");
             return;
-        }
-        else
+        } else
             warmingMessagesField.setText("");
         clientGUI.notifyGUI(userName, password, host, port);
     }
 
-    public final String getUserName () {
+    public final String getUserName() {
         return userName;
     }
-    public final String getPassword () {
+
+    public final String getPassword() {
         return password;
     }
-    public final String getHostName () {
+
+    public final String getHostName() {
         return host;
     }
-    public final int getPort () {
+
+    public final int getPort() {
         return port;
     }
+
     public final void setInfoLabel(String text) {
         warmingMessagesField.setText(text);
     }

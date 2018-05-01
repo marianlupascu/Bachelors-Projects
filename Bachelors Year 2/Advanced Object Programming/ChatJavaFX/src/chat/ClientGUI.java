@@ -1,14 +1,13 @@
 package chat;
 
+import controllers.ControllerForChatWindow;
+import controllers.ControllerForLoginClient;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import controllers.ControllerForLoginClient;
-import controllers.ControllerForChatWindow;
-import java.lang.String;
 
 public class ClientGUI extends Application {
 
@@ -20,7 +19,11 @@ public class ClientGUI extends Application {
     private ControllerForChatWindow controllerChat;
     private Stage primaryStage;
 
-    void setStage(String resource)  throws Exception  {
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    void setStage(String resource) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
 
         controller = new ControllerForLoginClient(this);
@@ -89,18 +92,14 @@ public class ClientGUI extends Application {
     }
 
     protected boolean parseInformation(String username, String password, String hostName, int portNumber) {
-        if(username.length() == 0)
+        if (username.length() == 0)
             return false;
         if (false) { // false-mince search in a data base information between username and password os something like this
             return false;
         }
-        if(hostName.length() == 0)
+        if (hostName.length() == 0)
             return false;
         return true;
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
     void append(String str) {
@@ -120,7 +119,7 @@ public class ClientGUI extends Application {
         return client;
     }
 
-    public ControllerForLoginClient getControllerForLoginClient(){
+    public ControllerForLoginClient getControllerForLoginClient() {
         return controller;
     }
 }

@@ -1,7 +1,6 @@
 package chat;
 
 import java.io.Serializable;
-import java.lang.String;
 
 public class Message implements Serializable {
 
@@ -15,7 +14,7 @@ public class Message implements Serializable {
         this.message = "";
     }
 
-    public  Message(Options option, String message) {
+    public Message(Options option, String message) {
         this.option = option;
         this.message = message;
     }

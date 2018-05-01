@@ -1,14 +1,13 @@
 package chat;
 
+import controllers.ControllerForServerGUI;
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import controllers.ControllerForServerGUI;
-import java.lang.String;
-import javafx.event.EventHandler;
 import javafx.stage.WindowEvent;
 
 
@@ -18,22 +17,26 @@ public class ServerGUI extends Application {
 
     private ControllerForServerGUI controllerServer;
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        try{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../resources/xml/ServerGUI_css.fxml"));
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../resources/xml/ServerGUI_css.fxml"));
 
-        controllerServer = new ControllerForServerGUI(this);
-        // Set it in the FXMLLoader
-        loader.setController(controllerServer);
+            controllerServer = new ControllerForServerGUI(this);
+            // Set it in the FXMLLoader
+            loader.setController(controllerServer);
 
-        Parent root = (Parent) loader.load();
-        Image applicationIcon = new Image(getClass().getResourceAsStream("../resources/img/favicon.png"));
-        primaryStage.getIcons().add(applicationIcon);
-        primaryStage.setTitle("SpaceChat - ServerGUI");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+            Parent root = (Parent) loader.load();
+            Image applicationIcon = new Image(getClass().getResourceAsStream("../resources/img/favicon.png"));
+            primaryStage.getIcons().add(applicationIcon);
+            primaryStage.setTitle("SpaceChat - ServerGUI");
+            primaryStage.setScene(new Scene(root));
+            primaryStage.show();
 
             primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                 @Override
@@ -45,10 +48,11 @@ public class ServerGUI extends Application {
                         } catch (Exception eClose) {
                         }
                         server = null;
-                     }
+                    }
                     try {
                         stop();
-                    }catch (Exception e) {}
+                    } catch (Exception e) {
+                    }
                 }
             });
 
@@ -57,10 +61,6 @@ public class ServerGUI extends Application {
         }
 
         server = null;
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
     void appendRoom(String str) {
@@ -97,6 +97,9 @@ public class ServerGUI extends Application {
         controllerServer.setPortNumberTextFieldEditable(false);
     }
 
+    public Server getServer() {
+        return server;
+    }
 
     class ServerRunning extends Thread {
         public void run() {
@@ -107,10 +110,6 @@ public class ServerGUI extends Application {
             appendEvent("Server crashed\n");
             server = null;
         }
-    }
-
-    public Server getServer() {
-        return server;
     }
 
 }

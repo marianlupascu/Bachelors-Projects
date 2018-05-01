@@ -8,17 +8,15 @@ import java.net.Socket;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.lang.String;
-import java.lang.System;
 
 public class Server {
 
+    private static final int defaultPortNumber = 500;
     private static int currentID;
     private ArrayList<ClientsThreads> listOfClients;
     private ServerGUI sg;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
     private int portNumber;
-    private static final int defaultPortNumber = 500;
     private boolean keepGoing = false;
 
     public Server() {
@@ -126,7 +124,7 @@ public class Server {
 
         // we loop in reverse order in case we would have to remove a Client
         // because it has disconnected
-        for (int i = listOfClients.size()-1; i >= 0; --i) {
+        for (int i = listOfClients.size() - 1; i >= 0; --i) {
             ClientsThreads currentClient = listOfClients.get(i);
             if (!currentClient.writeMsg(message)) {
                 listOfClients.remove(i);

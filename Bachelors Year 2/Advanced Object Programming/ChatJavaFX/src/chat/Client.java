@@ -1,8 +1,9 @@
 package chat;
 
-import java.net.*;
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
 
 public class Client {
 
@@ -63,7 +64,7 @@ public class Client {
 
     private void display(String msg) {
 
-            cg.append(msg + "\n");
+        cg.append(msg + "\n");
     }
 
     public void sendMessage(Message msg) {
@@ -99,19 +100,18 @@ public class Client {
                 try {
                     String msg = (String) sInput.readObject();
 
-                    if(cg.getControllerForLoginClient() == null)
-                         display(msg);
+                    if (cg.getControllerForLoginClient() == null)
+                        display(msg);
 
                 } catch (IOException e) {
-                    if(cg.getControllerForLoginClient() != null)
+                    if (cg.getControllerForLoginClient() != null)
                         cg.getControllerForLoginClient().setInfoLabel("Server has close the connection: " + e);
                     else
                         display("Server has close the connection: " + e);
 
-                        cg.connectionFailed();
+                    cg.connectionFailed();
                     break;
-                }
-                catch (ClassNotFoundException e2) {
+                } catch (ClassNotFoundException e2) {
                 }
             }
         }

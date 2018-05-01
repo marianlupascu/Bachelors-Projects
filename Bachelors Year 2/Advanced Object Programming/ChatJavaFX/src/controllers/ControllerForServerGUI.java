@@ -1,22 +1,14 @@
 package controllers;
 
-import chat.Server;
 import chat.ServerGUI;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Button;
-
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.lang.String;
-import java.lang.System;
-import java.lang.Integer;
-import chat.Message;
-import chat.Options;
 
 public class ControllerForServerGUI implements Initializable {
 
@@ -34,11 +26,11 @@ public class ControllerForServerGUI implements Initializable {
 
     private ServerGUI serverGUI;
 
-    public ControllerForServerGUI(){
+    public ControllerForServerGUI() {
         this(null);
     }
 
-    public ControllerForServerGUI(ServerGUI serverGUI){
+    public ControllerForServerGUI(ServerGUI serverGUI) {
         this.serverGUI = serverGUI;
     }
 
@@ -57,7 +49,7 @@ public class ControllerForServerGUI implements Initializable {
     }
 
     public void setPortNumberTextFieldEditable(boolean val) {
-        if(val)
+        if (val)
             portNumberTextField.setEditable(true);
         else
             portNumberTextField.setEditable(false);
