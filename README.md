@@ -13,6 +13,9 @@
 
   `Java`  :earth_africa: **SpaceChat** is a chat that involves a server and multiple clients who can communicate with each other via the server. The server is created on a specific port and clients can connect to it. The options of each client include: viewing all clients, log out, send a message. :boom:
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX/presentGif.gif?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX/ClientChatWindow.gif?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX/ClientLogin.gif?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX/ServerInterface.gif?raw=true)
 </details>
 
 <details><summary> Computational Geometry </summary>

@@ -1,5 +1,7 @@
 package chat;
 
+import javafx.util.Pair;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -126,9 +128,43 @@ public class Server {
         // because it has disconnected
         for (int i = listOfClients.size() - 1; i >= 0; --i) {
             ClientsThreads currentClient = listOfClients.get(i);
-            if (!currentClient.writeMsg(message)) {
+            if (!currentClient.isOnline()) {
                 listOfClients.remove(i);
                 displayOnGUI("Disconnected Client " + currentClient.username + " removed from list.");
+            } else
+                currentClient.writeMsg(message);
+        }
+    }
+
+    private synchronized void send(String messageInput, int id) {
+        String time = dateFormat.format(new Date());
+        String message = time + " " + messageInput + "\n";
+        if (sg == null)
+            System.out.print(message);
+        else
+            sg.appendRoom(message);
+
+        // we loop in reverse order in case we would have to remove a Client
+        // because it has disconnected
+        for (int i = listOfClients.size() - 1; i >= 0; --i) {
+            ClientsThreads currentClient = listOfClients.get(i);
+            if (currentClient.getUserId() == id) {
+                if (!currentClient.isOnline()) {
+                    listOfClients.remove(i);
+                    displayOnGUI("Disconnected Client " + currentClient.username + " removed from list.");
+                } else {
+                    currentClient.writeMsg(message);
+                    break;
+                }
+            }
+        }
+    }
+
+    private synchronized void updateListOfClients() {
+        for (int i = listOfClients.size() - 1; i >= 0; --i) {
+            ClientsThreads currentClient = listOfClients.get(i);
+            if (!currentClient.isOnline()) {
+                listOfClients.remove(i);
             }
         }
     }
@@ -146,6 +182,15 @@ public class Server {
     synchronized int getAviableID() {
         currentID++;
         return currentID;
+    }
+
+    synchronized ArrayList<Pair<String, Integer>> getListOfClients() {
+        ArrayList<Pair<String, Integer>> l = new ArrayList<Pair<String, Integer>>();
+        for (int i = 0; i < listOfClients.size(); ++i) {
+            ClientsThreads currentClient = listOfClients.get(i);
+            l.add(new Pair<String, Integer>(currentClient.getUsername(), currentClient.getUserId()));
+        }
+        return l;
     }
 
     class ClientsThreads extends Thread {
@@ -192,6 +237,10 @@ public class Server {
                 switch (messageContent.getOption()) {
 
                     case SENDAMESSAGE:
+                        send(username + ": " + messageContent.getMessage(), messageContent.getUserId());
+                        send(username + ": " + messageContent.getMessage(), id);
+                        break;
+                    case BROADCASTMESSAGE:
                         broadcast(username + ": " + messageContent.getMessage());
                         break;
                     case LOGOUT:
@@ -227,20 +276,30 @@ public class Server {
             }
         }
 
-        private boolean writeMsg(String msg) {
-
+        private boolean isOnline() {
             if (!socket.isConnected()) {
                 close();
                 return false;
             }
+            return true;
+        }
 
+        private void writeMsg(String msg) {
             try {
-                outputStream.writeObject(msg);
+                updateListOfClients();
+                outputStream.writeObject(new Pair<String, ArrayList<Pair<String, Integer>>>(msg, getListOfClients()));
             } catch (IOException e) {
                 displayOnGUI("Error sending message to " + username);
                 displayOnGUI(e.toString());
             }
-            return true;
+        }
+
+        String getUsername() {
+            return username;
+        }
+
+        int getUserId() {
+            return id;
         }
     }
 }

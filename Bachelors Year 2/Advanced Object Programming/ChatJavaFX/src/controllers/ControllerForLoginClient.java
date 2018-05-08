@@ -1,6 +1,7 @@
 package controllers;
 
 import chat.ClientGUI;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -47,23 +48,28 @@ public class ControllerForLoginClient implements Initializable {
 
     public void getInformations() {
 
-        userName = new String(usernameField.getText().trim());
-        password = new String(passwordField.getText().trim());
-        host = new String(localHostField.getText().trim());
-        try {
-            port = Integer.parseInt(portNumberField.getText().trim());
-            warmingMessagesField.setText("");
-        } catch (Exception er) {
-            warmingMessagesField.setText("Invalid port number");
-            return;
-        }
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                userName = new String(usernameField.getText().trim());
+                password = new String(passwordField.getText().trim());
+                host = new String(localHostField.getText().trim());
+                try {
+                    port = Integer.parseInt(portNumberField.getText().trim());
+                    warmingMessagesField.setText("");
+                } catch (Exception er) {
+                    warmingMessagesField.setText("Invalid port number");
+                    return;
+                }
 
-        if (port <= 0) {
-            warmingMessagesField.setText("Invalid port number");
-            return;
-        } else
-            warmingMessagesField.setText("");
-        clientGUI.notifyGUI(userName, password, host, port);
+                if (port <= 0) {
+                    warmingMessagesField.setText("Invalid port number");
+                    return;
+                } else
+                    warmingMessagesField.setText("");
+                clientGUI.notifyGUI(userName, password, host, port);
+            }
+        });
     }
 
     public final String getUserName() {
@@ -83,7 +89,12 @@ public class ControllerForLoginClient implements Initializable {
     }
 
     public final void setInfoLabel(String text) {
-        warmingMessagesField.setText(text);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                warmingMessagesField.setText(text);
+            }
+        });
     }
 
     @Override

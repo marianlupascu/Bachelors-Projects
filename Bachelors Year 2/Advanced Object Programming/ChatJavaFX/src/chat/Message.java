@@ -8,6 +8,7 @@ public class Message implements Serializable {
 
     private Options option;
     private String message;
+    private int id;
 
     public Message() {
         this.option = Options.SENDAMESSAGE;
@@ -19,11 +20,21 @@ public class Message implements Serializable {
         this.message = message;
     }
 
+    public Message(Options option, String message, int id) {
+        this.option = option;
+        this.message = message;
+        this.id = id;
+    }
+
     Options getOption() {
         return option;
     }
 
     String getMessage() {
         return message;
+    }
+
+    int getUserId() {
+        return id;
     }
 }

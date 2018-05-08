@@ -1,6 +1,7 @@
 package controllers;
 
 import chat.ServerGUI;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -34,29 +35,55 @@ public class ControllerForServerGUI implements Initializable {
         this.serverGUI = serverGUI;
     }
 
+    @FXML
     public void switchContext() {
 
-        String port = portNumberTextField.getText().trim();
-        serverGUI.actionPerformed(port);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                String port = portNumberTextField.getText().trim();
+                serverGUI.actionPerformed(port);
+            }
+        });
     }
 
     public void writeInEventsListView(String text) {
-        eventsListView.getItems().add(text);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                eventsListView.getItems().add(text);
+            }
+        });
     }
 
     public void writeInChatEventsListView(String text) {
-        chatEventsListView.getItems().add(text);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                chatEventsListView.getItems().add(text);
+            }
+        });
     }
 
     public void setPortNumberTextFieldEditable(boolean val) {
-        if (val)
-            portNumberTextField.setEditable(true);
-        else
-            portNumberTextField.setEditable(false);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                if (val)
+                    portNumberTextField.setEditable(true);
+                else
+                    portNumberTextField.setEditable(false);
+            }
+        });
     }
 
     public void setTextFromButtonSwitchContext(String val) {
-        switchButton.setText(val);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                switchButton.setText(val);
+            }
+        });
     }
 
     @Override

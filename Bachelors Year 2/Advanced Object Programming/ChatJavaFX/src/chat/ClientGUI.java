@@ -20,7 +20,10 @@ public class ClientGUI extends Application {
     private Stage primaryStage;
 
     public static void main(String[] args) {
-        launch(args);
+        try {
+            launch(args);
+        } catch (Exception e) {
+        }
     }
 
     void setStage(String resource) throws Exception {
@@ -51,10 +54,10 @@ public class ClientGUI extends Application {
     }
 
     public void notifyGUI(String username, String password, String hostName, int portNumber) {
-        System.out.println(username);
-        System.out.println(password);
-        System.out.println(hostName);
-        System.out.println(portNumber);
+//        System.out.println(username);
+//        System.out.println(password);
+//        System.out.println(hostName);
+//        System.out.println(portNumber);
         if (parseInformation(username, password, hostName, portNumber)) {
             controller.setInfoLabel("Sign in...");
 
@@ -67,6 +70,7 @@ public class ClientGUI extends Application {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("../resources/xml/ChatWindow_css.fxml"));
 
                 controllerChat = new ControllerForChatWindow(this);
+
                 // Set it in the FXMLLoader
                 loader.setController(controllerChat);
 
@@ -121,5 +125,9 @@ public class ClientGUI extends Application {
 
     public ControllerForLoginClient getControllerForLoginClient() {
         return controller;
+    }
+
+    public ControllerForChatWindow getControllerForChat() {
+        return controllerChat;
     }
 }

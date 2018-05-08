@@ -64,12 +64,13 @@ public class ServerGUI extends Application {
     }
 
     void appendRoom(String str) {
+
         controllerServer.writeInChatEventsListView(str);
     }
 
     void appendEvent(String str) {
-        controllerServer.writeInEventsListView(str);
 
+        controllerServer.writeInEventsListView(str);
     }
 
     public void actionPerformed(String portString) {

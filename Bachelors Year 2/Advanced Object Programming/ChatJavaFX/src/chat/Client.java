@@ -1,9 +1,12 @@
 package chat;
 
+import javafx.util.Pair;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
+import java.util.ArrayList;
 
 public class Client {
 
@@ -63,7 +66,6 @@ public class Client {
     }
 
     private void display(String msg) {
-
         cg.append(msg + "\n");
     }
 
@@ -98,20 +100,24 @@ public class Client {
         public void run() {
             while (true) {
                 try {
-                    String msg = (String) sInput.readObject();
+                    Pair<String, ArrayList<Pair<String, Integer>>> msg =
+                            (Pair<String, ArrayList<Pair<String, Integer>>>) sInput.readObject();
 
-                    if (cg.getControllerForLoginClient() == null)
-                        display(msg);
+                    if (cg.getControllerForLoginClient() == null) {
+                        cg.getControllerForChat().updateListofClients(msg.getValue());
+                        if (msg.getKey() != "")
+                            display(msg.getKey());
+                    }
 
                 } catch (IOException e) {
-                    if (cg.getControllerForLoginClient() != null)
+                    if (cg.getControllerForChat() == null)
                         cg.getControllerForLoginClient().setInfoLabel("Server has close the connection: " + e);
                     else
                         display("Server has close the connection: " + e);
 
                     cg.connectionFailed();
                     break;
-                } catch (ClassNotFoundException e2) {
+                } catch (Exception e2) {
                 }
             }
         }

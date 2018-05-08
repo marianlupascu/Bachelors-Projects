@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -10,182 +10,146 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="392.0" minHeight="392.0" prefHeight="392.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-    <children>
-        <MenuBar blendMode="EXCLUSION" VBox.vgrow="NEVER">
-            <menus>
-                <Menu mnemonicParsing="false" text="File">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="Preferences…" />
-                        <SeparatorMenuItem mnemonicParsing="false" />
-                        <MenuItem mnemonicParsing="false" text="Quit" />
-                    </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="Undo" />
-                        <MenuItem mnemonicParsing="false" text="Redo" />
-                        <SeparatorMenuItem mnemonicParsing="false" />
-                        <MenuItem mnemonicParsing="false" text="Cut" />
-                        <MenuItem mnemonicParsing="false" text="Copy" />
-                        <MenuItem mnemonicParsing="false" text="Paste" />
-                        <MenuItem mnemonicParsing="false" text="Delete" />
-                        <SeparatorMenuItem mnemonicParsing="false" />
-                        <MenuItem mnemonicParsing="false" text="Select All" />
-                        <MenuItem mnemonicParsing="false" text="Unselect All" />
-                    </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="About SpaceChat" />
-                    </items>
-                </Menu>
-            </menus>
-        </MenuBar>
-        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-            <children>
-                <ImageView fitHeight="368.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../img/Background.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="368.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="75.0">
-                    <image>
-                        <Image url="@../img/Mountain-Graph-by-Seth-Eckert.gif" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="368.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="565.0">
-                    <image>
-                        <Image url="@../img/Background.png" />
-                    </image>
-                </ImageView>
-                <BorderPane layoutY="-7.0" prefHeight="375.0" prefWidth="640.0">
-                    <top>
-                        <HBox prefHeight="46.0" prefWidth="640.0" BorderPane.alignment="CENTER">
-                            <children>
-                                <HBox prefHeight="100.0" prefWidth="200.0">
-                                    <children>
-                                        <HBox prefHeight="1.0" prefWidth="211.0">
-                                            <children>
-                                                <HBox prefHeight="100.0" prefWidth="200.0">
-                                                    <children>
-                                                        <HBox prefHeight="46.0" prefWidth="61.0">
-                                                            <children>
-                                                                <ImageView fx:id="logoImage" fitHeight="50.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
-                                                                    <image>
-                                                                        <Image url="@../img/1.-Batman.jpg" />
-                                                                    </image>
-                                                                    <HBox.margin>
-                                                                        <Insets bottom="3.0" left="3.0" right="1.0" top="3.0" />
-                                                                    </HBox.margin>
-                                                                </ImageView>
-                                                            </children>
-                                                        </HBox>
-                                                        <Label prefHeight="35.0" prefWidth="135.0" text="Batman">
-                                                            <font>
-                                                                <Font name="Neuropol X Bold" size="20.0" />
-                                                            </font>
-                                                            <HBox.margin>
-                                                                <Insets top="7.0" />
-                                                            </HBox.margin>
-                                                        </Label>
-                                                    </children>
-                                                </HBox>
-                                            </children>
-                                        </HBox>
-                                    </children>
-                                </HBox>
-                                <HBox prefHeight="100.0" prefWidth="256.0">
-                                    <children>
-                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="266.0" text="SpaceChat" textFill="#00b0f0">
-                                            <font>
-                                                <Font name="Neuropol X Bold" size="50.0" />
-                                            </font>
-                                            <HBox.margin>
-                                                <Insets top="5.0" />
-                                            </HBox.margin>
-                                            <opaqueInsets>
-                                                <Insets />
-                                            </opaqueInsets>
-                                        </Label>
-                                    </children>
-                                </HBox>
-                                <ImageView fitHeight="55.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../img/favicon.png" />
-                                    </image>
-                                    <HBox.margin>
-                                        <Insets left="10.0" />
-                                    </HBox.margin>
-                                </ImageView>
-                                <MenuButton blendMode="SOFT_LIGHT" mnemonicParsing="false" text="Options">
-                                    <items>
-                                        <MenuItem fx:id="whoIsInMenuItem" mnemonicParsing="false" onAction="#seeWhoIsIn" text="See who is in" />
-                                        <MenuItem fx:id="logOutMenuItem" mnemonicParsing="false" onAction="#logOut" text="Log out" />
-                                    </items>
-                                    <font>
-                                        <Font name="Neuropol X Bold" size="17.0" />
-                                    </font>
-                                    <HBox.margin>
-                                        <Insets left="8.0" top="12.0" />
-                                    </HBox.margin>
-                                </MenuButton>
-                            </children>
-                            <BorderPane.margin>
-                                <Insets top="8.0" />
-                            </BorderPane.margin>
-                        </HBox>
-                    </top>
-                    <bottom>
-                        <HBox prefHeight="73.0" prefWidth="640.0" BorderPane.alignment="CENTER">
-                            <children>
-                                <HBox prefHeight="51.0" prefWidth="539.0">
-                                    <children>
-                                        <TextArea fx:id="inputContentTextArea" blendMode="SOFT_LIGHT" prefHeight="63.0" prefWidth="526.0" text="Hi!">
-                                            <HBox.margin>
-                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                            </HBox.margin></TextArea>
-                                    </children>
-                                </HBox>
-                                <Button fx:id="sendButton" blendMode="SOFT_LIGHT" mnemonicParsing="false" onAction="#sendMessage" prefHeight="115.0" prefWidth="101.0" text="Send">
-                                    <HBox.margin>
-                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                    </HBox.margin>
-                                    <padding>
-                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                    </padding>
-                                    <font>
-                                        <Font name="Neuropol X Bold" size="24.0" />
-                                    </font></Button>
-                            </children>
-                        </HBox>
-                    </bottom>
-                    <left>
-                        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                            <children>
-                                <ListView blendMode="SOFT_LIGHT" prefHeight="200.0" prefWidth="200.0">
-                                    <HBox.margin>
-                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                    </HBox.margin></ListView>
-                            </children>
-                        </HBox>
-                    </left>
-                    <center>
-                        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                            <children>
-                                <ListView fx:id="messagesListView" blendMode="SOFT_LIGHT" prefHeight="257.0" prefWidth="477.0">
-                                    <HBox.margin>
-                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                    </HBox.margin></ListView>
-                            </children>
-                        </HBox>
-                    </center>
-                </BorderPane>
-            </children>
-        </AnchorPane>
-        <ListView prefHeight="200.0" prefWidth="200.0" />
-    </children>
-    <stylesheets>
-        <URL value="@ChatWindow.css" />
-    </stylesheets>
+<VBox prefHeight="425.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar blendMode="EXCLUSION" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About SpaceChat" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="Options">
+              <items>
+                <MenuItem fx:id="whoIsInMenuItem" mnemonicParsing="false" onAction="#seeWhoIsIn" text="See all users on-line" />
+                  <MenuItem fx:id="logOutMenuItem" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+              </items>
+            </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/designvertise_jokubas-setkauskas-illustrations_7.gif" />
+               </image></ImageView>
+            <BorderPane prefHeight="400.0" prefWidth="800.0">
+               <top>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="logoImage" fitHeight="113.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/5.-Ironman.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="IronMan" textFill="WHITE">
+                           <font>
+                              <Font name="Neuropol X Bold" size="26.0" />
+                           </font>
+                           <padding>
+                              <Insets top="45.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="99.0" prefWidth="321.0" text="SpaceChat" textFill="WHITE">
+                           <font>
+                              <Font name="Neuropol X Bold" size="60.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" top="30.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fitHeight="114.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/favicon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ToggleButton blendMode="SOFT_LIGHT" mnemonicParsing="false" onAction="#handleToggleAction" prefHeight="56.0" prefWidth="122.0" text="Broadcast">
+                           <HBox.margin>
+                              <Insets bottom="25.0" left="5.0" right="25.0" top="25.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Neuropol X Bold" size="20.0" />
+                           </font></ToggleButton>
+                     </children>
+                  </HBox>
+               </top>
+               <left>
+                  <ListView fx:id="usersListView" blendMode="SOFT_LIGHT" prefHeight="179.0" prefWidth="230.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="5.0" />
+                     </BorderPane.margin>
+                  </ListView>
+               </left>
+               <center>
+                  <ListView fx:id="messagesListView" blendMode="SOFT_LIGHT" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </BorderPane.margin>
+                  </ListView>
+               </center>
+               <bottom>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextArea fx:id="inputContentTextArea" blendMode="SOFT_LIGHT" prefHeight="90.0" prefWidth="656.0" promptText="Hi!">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextArea>
+                        <Button fx:id="sendButton" blendMode="SOFT_LIGHT" mnemonicParsing="false" onAction="#sendMessage" prefHeight="95.0" prefWidth="134.0" text="SEND">
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Neuropol X Bold" size="30.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@ChatWindow.css" />
+  </stylesheets>
 </VBox>
