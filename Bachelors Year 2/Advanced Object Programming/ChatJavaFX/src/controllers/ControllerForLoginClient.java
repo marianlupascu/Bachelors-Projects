@@ -84,6 +84,11 @@ public class ControllerForLoginClient implements Initializable {
         return host;
     }
 
+    public final TextField getActualHostName() {
+
+        return localHostField;
+    }
+
     public final int getPort() {
         return port;
     }

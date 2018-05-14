@@ -6,9 +6,10 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import patterns.ImageInterface;
+import patterns.ProxyImage;
 
 
 public class ServerGUI extends Application {
@@ -32,8 +33,10 @@ public class ServerGUI extends Application {
             loader.setController(controllerServer);
 
             Parent root = (Parent) loader.load();
-            Image applicationIcon = new Image(getClass().getResourceAsStream("../resources/img/favicon.png"));
-            primaryStage.getIcons().add(applicationIcon);
+
+            final ImageInterface applicationIcon = new ProxyImage("../resources/img/favicon.png");
+            applicationIcon.displayImage(primaryStage);
+
             primaryStage.setTitle("SpaceChat - ServerGUI");
             primaryStage.setScene(new Scene(root));
             primaryStage.show();

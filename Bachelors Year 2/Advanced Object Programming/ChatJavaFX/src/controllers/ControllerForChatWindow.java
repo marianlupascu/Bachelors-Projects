@@ -78,7 +78,7 @@ public class ControllerForChatWindow implements Initializable {
                 if (broadcastToggle)
                     clientGUI.getClient().sendMessage
                             (new Message(Options.BROADCASTMESSAGE, inputContentTextArea.getText(), Integer.MAX_VALUE));
-                else
+                else if (usersListView.getItems().size() > 0)
                     clientGUI.getClient().sendMessage
                             (new Message(Options.SENDAMESSAGE, inputContentTextArea.getText(), Integer.parseInt(selected)));
             }

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="625.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar blendMode="EXCLUSION" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Bank-Super-Bowl-2014-Charge-gif-by-Seth-Eckert.gif" />
+               </image></ImageView>
+            <BorderPane prefHeight="600.0" prefWidth="800.0">
+               <center>
+                  <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <BorderPane.margin>
+                        <Insets left="100.0" right="100.0" top="25.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press1" prefHeight="76.0" prefWidth="217.0" text="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press2" prefHeight="76.0" prefWidth="217.0" text="2" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press4" prefHeight="76.0" prefWidth="217.0" text="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press5" prefHeight="76.0" prefWidth="217.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press3" prefHeight="76.0" prefWidth="217.0" text="3" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press6" prefHeight="76.0" prefWidth="217.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press7" prefHeight="76.0" prefWidth="217.0" text="7" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press8" prefHeight="76.0" prefWidth="217.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press9" prefHeight="76.0" prefWidth="217.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#pressHashTag" prefHeight="76.0" prefWidth="217.0" text="#" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#press0" prefHeight="76.0" prefWidth="217.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#pressPoint" prefHeight="76.0" prefWidth="217.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#pressClear" prefHeight="76.0" prefWidth="217.0" text="Clear" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#pressOk" prefHeight="76.0" prefWidth="217.0" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#pressDismiss" prefHeight="76.0" prefWidth="217.0" text="Dismiss" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Neuropol X Bold" size="25.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </center>
+               <top>
+                  <VBox prefHeight="311.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView blendMode="HARD_LIGHT" fitHeight="89.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bankLogo.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="350.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label blendMode="HARD_LIGHT" prefHeight="60.0" prefWidth="671.0" text="Wolf Bank" textAlignment="CENTER" textFill="#00b0f0">
+                           <font>
+                              <Font name="Neuropol X Bold" size="75.0" />
+                           </font>
+                           <padding>
+                              <Insets left="250.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="informationLabel" blendMode="HARD_LIGHT" contentDisplay="CENTER" prefHeight="162.0" prefWidth="700.0" textAlignment="CENTER" textFill="RED">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Neuropol X Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="103.0" text="ID: ">
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="22.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" />
+                                 </HBox.margin></Label>
+                              <TextField fx:id="idTextField" blendMode="HARD_LIGHT" prefHeight="25.0" prefWidth="225.0">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" right="250.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="120.0" prefWidth="800.0">
+                           <children>
+                              <Label text="Password: ">
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="22.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <PasswordField fx:id="passwordField" blendMode="HARD_LIGHT" prefHeight="25.0" prefWidth="225.0">
+                                 <HBox.margin>
+                                    <Insets right="250.0" />
+                                 </HBox.margin>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+               <bottom>
+                  <VBox prefHeight="36.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@LoginInterface.css" />
+  </stylesheets>
+</VBox>

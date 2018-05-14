@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="625.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar blendMode="EXCLUSION" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Oh-you-credit-card-by-Linn-Fritz.gif" />
+               </image>
+            </ImageView>
+            <BorderPane prefHeight="600.0" prefWidth="800.0">
+               <top>
+                  <VBox prefHeight="165.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="78.0" prefWidth="743.0" text="Server Interface" textAlignment="CENTER">
+                           <font>
+                              <Font name="Neuropol X Bold" size="50.0" />
+                           </font>
+                           <padding>
+                              <Insets left="210.0" />
+                           </padding>
+                        </Label>
+                        <HBox prefHeight="57.0" prefWidth="800.0">
+                           <children>
+                              <Label text="Port Number: ">
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="30.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="100.0" top="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="portNumberTextField" blendMode="HARD_LIGHT" prefHeight="36.0" prefWidth="200.0" promptText="1099" text="1099">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="switchButton" blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#switchContext" prefHeight="44.0" prefWidth="86.0" text="Start">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="22.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+               <center>
+                  <ListView fx:id="eventsListView" blendMode="SOFT_LIGHT" prefHeight="409.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="50.0" left="50.0" right="50.0" />
+                     </BorderPane.margin>
+                  </ListView>
+               </center>
+               <bottom>
+                  <Label text="©Lupascu Marian" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Neuropol X Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </Label>
+               </bottom>
+            </BorderPane>
+         </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@ServerInterface.css" />
+  </stylesheets>
+</VBox>

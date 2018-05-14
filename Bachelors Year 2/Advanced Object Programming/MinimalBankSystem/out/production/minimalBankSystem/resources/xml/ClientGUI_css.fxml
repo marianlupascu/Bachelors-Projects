@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="625.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar blendMode="EXCLUSION" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Bank-Super-Bowl-2014-Bill-gif-by-Seth-Eckert.gif" />
+               </image>
+            </ImageView>
+            <BorderPane prefHeight="600.0" prefWidth="800.0">
+               <top>
+                  <VBox prefHeight="257.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="94.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/bankLogo.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="350.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="81.0" prefWidth="225.0" text="Wolf Bank" textFill="#ed9500">
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="50.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="300.0" right="275.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="infoLabel" prefHeight="118.0" prefWidth="600.0" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="100.0" right="100.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="98.0" prefWidth="800.0">
+                           <children>
+                              <Label fx:id="nameLabel" prefHeight="33.0" prefWidth="214.0" text="Mr. Brown, " textFill="#2fff00">
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="33.0" prefWidth="504.0" text="what would you like to do today?" textFill="#2fff00">
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Neuropol-Regular" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="amountTextField" blendMode="HARD_LIGHT" prefHeight="37.0" prefWidth="414.0" promptText="The amount" text="50">
+                                 <HBox.margin>
+                                    <Insets left="250.0" right="250.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Neuropol X Bold" size="20.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+               <center>
+                  <GridPane prefHeight="66.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <BorderPane.margin>
+                        <Insets bottom="25.0" left="100.0" right="100.0" top="25.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#inquiry" prefHeight="79.0" prefWidth="230.0" text="Inquiry">
+                                 <GridPane.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#widthdraw" prefHeight="79.0" prefWidth="230.0" text="Widthdraw" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#deposit" prefHeight="79.0" prefWidth="230.0" text="Deposit">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button blendMode="HARD_LIGHT" mnemonicParsing="false" prefHeight="79.0" prefWidth="230.0" text="Settings" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label blendMode="HARD_LIGHT" prefHeight="99.0" prefWidth="200.0" style="-fx-background-color: #FFFF00;" text="50$">
+                                 <font>
+                                    <Font size="52.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="2.0" right="2.0" top="2.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label blendMode="HARD_LIGHT" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #FFFF00;" text="FAVORITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="2.0" right="2.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label blendMode="HARD_LIGHT" prefHeight="17.0" prefWidth="273.0" style="-fx-background-color: #FFFF00;" text="WIDTHDRAW">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+               </center>
+               <bottom>
+                  <VBox prefHeight="156.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button blendMode="RED" mnemonicParsing="false" onAction="#logOut" prefHeight="55.0" prefWidth="300.0" style="-fx-background-color: red;" text="EXIT">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="250.0" right="250.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children></VBox>
+               </bottom>
+            </BorderPane>
+         </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@ClientGUI.css" />
+  </stylesheets>
+</VBox>

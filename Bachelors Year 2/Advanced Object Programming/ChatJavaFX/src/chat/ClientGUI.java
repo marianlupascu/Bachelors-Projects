@@ -8,6 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import patterns.EventSourceObservated;
+
+import java.util.Observable;
+import java.util.Observer;
 
 public class ClientGUI extends Application {
 
@@ -19,9 +23,9 @@ public class ClientGUI extends Application {
     private ControllerForChatWindow controllerChat;
     private Stage primaryStage;
 
-    public static void main(String[] args) {
+    public void prepare() {
         try {
-            launch(args);
+            launch();
         } catch (Exception e) {
         }
     }
@@ -46,6 +50,16 @@ public class ClientGUI extends Application {
 
         this.primaryStage = primaryStage;
         setStage("../resources/xml/LoginClient_css.fxml");
+
+        EventSourceObservated eventSource = new EventSourceObservated(controller);
+
+        eventSource.addObserver(new Observer() {
+            public void update(Observable obj, Object arg) {
+                controller.setInfoLabel("We recommend that you keep the port on localhost not on " + arg);
+            }
+        });
+        eventSource.start();
+
         try {
 
         } catch (Exception e) {
