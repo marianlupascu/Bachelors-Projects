@@ -16,6 +16,18 @@
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX/ClientChatWindow.gif?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX/ClientLogin.gif?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/ChatJavaFX/ServerInterface.gif?raw=true)
+
+* [WolfBank ATM](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Advanced%20Object%20Programming/MinimalBankSystem) 
+
+  `Java`  :coffee: **WolfBank ATM** is a Remote Method Invocation (RMI) application implemented in Java that involves the existence of a server and multiple clients. A client (unique accountId) can go to an ATM and use 3 operations:
+     - double deposit(accountId, int amount)
+     - double widthdraw(accountId, int amount)
+     - double inquiry(int accountId)
+
+ Also, I consider that multiple clients with the same accountId can request widthdraw/ operations. :boom:
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/MinimalBankSystem/present.gif?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/MinimalBankSystem/client.gif?raw=true)
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/MinimalBankSystem/server.gif?raw=true)
 </details>
 
 <details><summary> Computational Geometry </summary>
