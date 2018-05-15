@@ -8,6 +8,9 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 
 public class RmiServer extends UnicastRemoteObject implements RmiServerIntf {
 
@@ -17,6 +20,7 @@ public class RmiServer extends UnicastRemoteObject implements RmiServerIntf {
             new Account(3, "Green", 1234, 1000000000),
             new Account(4, "Black", 1234, -8.5),
             new Account(5, "Grey", 1234, 5)));
+    private final Lock mutex = new ReentrantLock(true);
     private ServerGUI serverGUI;
     private int portNumer;
 
@@ -55,11 +59,22 @@ public class RmiServer extends UnicastRemoteObject implements RmiServerIntf {
     }
 
     @java.lang.Override
-    public synchronized double inquiry(int accountId) throws RemoteException {
+    public double inquiry(int accountId) throws RemoteException {
         for (int i = 0; i < listOfClients.size(); i++) {
             if (listOfClients.get(i).getId() == accountId) {
                 serverGUI.appendEvent("id: " + accountId + " inquiry: " + listOfClients.get(i).getMoney());
-                return listOfClients.get(i).getMoney();
+
+                try {
+                    mutex.lock();
+                    try {
+                        return listOfClients.get(i).getMoney();
+                    } finally {
+                        mutex.unlock();
+                    }
+                } catch (Exception ie) {
+                    mutex.unlock();
+                    return 0;
+                }
             }
         }
         return 0;
@@ -69,13 +84,24 @@ public class RmiServer extends UnicastRemoteObject implements RmiServerIntf {
     public synchronized double widthdraw(int accountId, int amount) throws RemoteException {
         for (int i = 0; i < listOfClients.size(); i++) {
             if (listOfClients.get(i).getId() == accountId) {
-                if (listOfClients.get(i).getMoney() < amount) {
-                    serverGUI.appendEvent("id: " + accountId + " try widthdraw: " + amount);
-                    return listOfClients.get(i).getMoney();
-                } else {
-                    listOfClients.get(i).minusMoney(amount);
-                    serverGUI.appendEvent("id: " + accountId + " make widthdraw: " + amount);
-                    return listOfClients.get(i).getMoney();
+
+                try {
+                    mutex.lock();
+                    try {
+                        if (listOfClients.get(i).getMoney() < amount) {
+                            serverGUI.appendEvent("id: " + accountId + " try widthdraw: " + amount);
+                            return listOfClients.get(i).getMoney();
+                        } else {
+                            listOfClients.get(i).minusMoney(amount);
+                            serverGUI.appendEvent("id: " + accountId + " make widthdraw: " + amount);
+                            return listOfClients.get(i).getMoney();
+                        }
+                    } finally {
+                        mutex.unlock();
+                    }
+                } catch (Exception ie) {
+                    mutex.unlock();
+                    return 0;
                 }
             }
         }

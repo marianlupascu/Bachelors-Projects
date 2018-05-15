@@ -8,11 +8,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import rmi.ClientInterface;
+import rmi.IndividualPersonClient;
+import rmi.LegalPersonClient;
 import rmi.RmiClient;
 
 public class ClientGUI extends Application {
 
-    private RmiClient rmiClient;
+    private ClientInterface clientInterface;
+//    private RmiClient rmiClient;
     private LoginController loginController;
     private ClientGUIController clientGUIController;
     private Stage primaryStage;
@@ -81,7 +85,8 @@ public class ClientGUI extends Application {
     }
 
     public void updateName() {
-        String name = rmiClient.getName();
+//        String name = rmiClient.getName();
+        String name = clientInterface.getName();
         clientGUIController.setNameLabel("Mr. " + name + ", ");
     }
 
@@ -106,7 +111,7 @@ public class ClientGUI extends Application {
             return false;
         }
         try {
-            if (rmiClient.init(idClient, passwordClient)) {
+            if (clientInterface.init(idClient, passwordClient)) {
                 return true;
             } else {
                 loginController.setInfoLabel("You may have mistaken your password, try again! \n");
@@ -135,21 +140,24 @@ public class ClientGUI extends Application {
     }
 
     public double makeInquiry() throws Exception {
-        return rmiClient.inquiry();
+        return clientInterface.inquiry();
     }
 
     public double makeDeposit(int amount) throws Exception {
-        return rmiClient.deposit(amount);
+        return clientInterface.deposit(amount);
     }
 
     public double makeWidthdraw(int amount) throws Exception {
-        return rmiClient.widthdraw(amount);
+        return clientInterface.widthdraw(amount);
     }
 
     public void start() {
         // ceate a new Server
         try {
-            rmiClient = new RmiClient(this);
+
+            clientInterface = new IndividualPersonClient(new RmiClient(this));
+
+//            rmiClient = new RmiClient(this);
             // and start it as a thread
             new ClientRunning().start();
         } catch (Exception e) {
@@ -159,9 +167,11 @@ public class ClientGUI extends Application {
     class ClientRunning extends Thread {
         public void run() {
             try {
-                rmiClient.start();         // should execute until if fails
+//                rmiClient.start();         // should execute until if fails
+                clientInterface.start();
             } catch (Exception e) {
-                rmiClient = null;
+//                rmiClient = null;
+                clientInterface = null;
             }
         }
     }

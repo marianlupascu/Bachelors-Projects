@@ -20,6 +20,8 @@ public class RmiClient implements ClientInterface {
         serverIntf = (RmiServerIntf) Naming.lookup("//localhost/RmiServer");
     }
 
+
+    @Override
     public boolean init(int id, int password) throws Exception {
         name = serverIntf.isClient(id, password);
         if (name == null) {
@@ -30,6 +32,7 @@ public class RmiClient implements ClientInterface {
         }
     }
 
+    @Override
     public String getName() {
         return name;
     }
@@ -49,6 +52,7 @@ public class RmiClient implements ClientInterface {
         return serverIntf.widthdraw(id, amount);
     }
 
+    @Override
     public void start() {
     }
 }
