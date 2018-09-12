@@ -1,0 +1,1 @@
+functieExercitiul1(-10, 10);

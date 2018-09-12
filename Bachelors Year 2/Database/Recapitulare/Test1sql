@@ -1,0 +1,52 @@
+--1. Sã se afiºeze denumirile magazinelor ºi numele clienilor acestora. Rezultatul va fi
+--ordonat alfabetic ºi nu va conine duplicate.
+SELECT DISTINCT M.NUME, C.NUME
+FROM MAGAZINE_MLU M
+JOIN OFERTE_MLU O ON (M.ID = O.ID_MAGAZIN)
+JOIN ACHIZITII_MLU A ON (A.ID_OFERTA = O.ID)
+JOIN CLIENTI_MLU C ON (C.ID = A.ID_CLIENT)
+ORDER BY 2, 1
+;
+
+--2. Pentru produsele aflate la ofertã în cel puin douã magazine, sã se afiºeze denumirea
+--ºi media preurilor de vânzare a acestora.
+SELECT P.NUME, AVG(O.PRET)
+FROM PRODUSE_MLU P
+JOIN OFERTE_MLU O ON P.ID = O.ID_PRODUS
+JOIN MAGAZINE_MLU M ON M.ID = O.ID_MAGAZIN
+GROUP BY P.ID, P.NUME
+HAVING COUNT(M.ID) >= 2
+;
+
+--3. Sã se creeze tabelul TOP_MAGAZINE, ce va avea coloanele cod_magazin, oras,
+--nr_produse ºi va conine, pentru fiecare oraº, magazinul cu cele mai multe produse în stoc.
+
+SELECT * FROM TOP_MAGAZINE_MLU;
+DROP TABLE TOP_MAGAZINE_MLU;
+CREATE TABLE TOP_MAGAZINE_MLU AS (
+    SELECT M.ID, M.ORAS, COUNT(P.ID) AS "NUMAR PRODUSE"
+    FROM MAGAZINE_MLU M
+    JOIN OFERTE_MLU O ON (O.ID_MAGAZIN = M.ID)
+    JOIN PRODUSE_MLU P ON (P.ID = O.ID_PRODUS)
+    GROUP BY M.ID, M.ORAS, O.IN_STOC
+    HAVING O.IN_STOC = 1 AND COUNT(P.ID) =  (SELECT MAX(COUNT(P1.ID)) FROM PRODUSE_MLU P1
+                                             JOIN OFERTE_MLU O1 ON (P1.ID = O1.ID_PRODUS)
+                                             JOIN MAGAZINE_MLU M1 ON (M1.ID = O1.ID_MAGAZIN)
+                                             GROUP BY M1.ORAS, M1.ID, O1.IN_STOC
+                                             HAVING O1.IN_STOC = 1 AND M.ORAS = M1.ORAS)
+);
+
+--4. Sã se determine numãrul total de produse, precum ºi numãrul de produse oferite în
+--magazinele din fiecare dintre oraºele Bucureºti, Craiova ºi Iaºi.
+SELECT * FROM PRODUSE_MLU ORDER BY 2;
+SELECT * FROM MAGAZINE_MLU;
+SELECT * FROM OFERTE_MLU ORDER BY ID_MAGAZIN;
+
+SELECT (SELECT COUNT(1) FROM PRODUSE_MLU) "TOTAL",
+(SELECT COUNT(P.ID) FROM PRODUSE_MLU P JOIN OFERTE_MLU O ON (O.ID_PRODUS = P.ID) JOIN MAGAZINE_MLU M ON (O.ID_MAGAZIN = M.ID)
+WHERE UPPER(M.ORAS) = 'BUCURESTI') "BUCURESTI",
+(SELECT COUNT(P.ID) FROM PRODUSE_MLU P JOIN OFERTE_MLU O ON (O.ID_PRODUS = P.ID) JOIN MAGAZINE_MLU M ON (O.ID_MAGAZIN = M.ID)
+WHERE UPPER(M.ORAS) = 'CRAIOVA') "CRAIOVA",
+(SELECT COUNT(P.ID) FROM PRODUSE_MLU P JOIN OFERTE_MLU O ON (O.ID_PRODUS = P.ID) JOIN MAGAZINE_MLU M ON (O.ID_MAGAZIN = M.ID)
+WHERE UPPER(M.ORAS) = 'IASI') "IASI"
+FROM DUAL;
