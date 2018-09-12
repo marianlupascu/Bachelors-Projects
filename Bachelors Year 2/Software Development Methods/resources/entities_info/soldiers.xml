@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<soldiers>
+	<types>
+		<defender>
+			<buy>
+				<life> 100 </life>
+				<armor> 125 </armor>
+				<attack> 25 </attack>
+				<gold> 200 </gold>
+				<miss> 30 </miss>
+				<dodge> 2 </dodge>
+				<critical> 1 </critical>
+			</buy>
+			<upgrade>
+				<!-- all of these are ratios -->
+				<life> 1.25 </life>
+				<armor> 1.25 </armor>
+				<attack> 1.21 </attack>
+				<gold> 1.1 </gold>
+				<miss> 0.95 </miss>
+				<dodge> 1.05 </dodge>
+				<critical> 1.084 </critical>
+			</upgrade>
+		</defender>
+		<fighter>
+			<buy>
+				<life> 100 </life>
+				<armor> 100 </armor>
+				<attack> 30 </attack>
+				<gold> 300 </gold>
+				<miss> 25 </miss>
+				<dodge> 3 </dodge>
+				<critical> 1 </critical>
+			</buy>
+			<upgrade>
+				<!-- all of these are ratios -->
+				<life> 1.235 </life>
+				<armor> 1.235 </armor>
+				<attack> 1.21 </attack>
+				<gold> 1.1 </gold>
+				<miss> 0.93 </miss>
+				<dodge> 1.05 </dodge>
+				<critical> 1.092 </critical>
+			</upgrade>
+		</fighter>
+		<warrior>
+			<buy>
+				<life> 125 </life>
+				<armor> 100 </armor>
+				<attack> 50 </attack>
+				<gold> 500 </gold>
+				<miss> 20 </miss>
+				<dodge> 5 </dodge>
+				<critical> 3 </critical>
+			</buy>
+			<upgrade>
+				<!-- all of these are ratios -->
+				<life> 1.23 </life>
+				<armor> 1.25 </armor>
+				<attack> 1.21 </attack>
+				<gold> 1.1 </gold>
+				<miss> 0.93 </miss>
+				<dodge> 1.05 </dodge>
+				<critical> 1.1 </critical>
+			</upgrade>
+		</warrior>
+	</types>
+</soldiers>

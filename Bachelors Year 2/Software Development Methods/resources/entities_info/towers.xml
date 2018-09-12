@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<towers>
+	<buy>
+		<armor> 5000 </armor>
+		<attack> 1 </attack>
+		<gold> 1000 </gold>
+	</buy>
+	<upgrade>
+		<!-- all of these are ratios -->
+		<armor> 1.2 </armor>
+		<attack> 1.23 </attack>
+		<gold> 1.1 </gold>
+	</upgrade>
+</towers>
