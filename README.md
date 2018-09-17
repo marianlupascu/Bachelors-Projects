@@ -1,4 +1,5 @@
 
+  
 
 # School-Projects
 > This repository contains college projects 
@@ -28,6 +29,10 @@
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/MinimalBankSystem/present.gif?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/MinimalBankSystem/client.gif?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Advanced%20Object%20Programming/MinimalBankSystem/server.gif?raw=true)
+</details>
+
+<details><summary> Artificial Intelligence </summary>
+
 </details>
 
 <details><summary> Computational Geometry </summary>
@@ -72,6 +77,7 @@
 * [Game with MARVEL characters](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project)
 
   `javascript` The game contains five levels, each of which is related to a Marvel series movie. The protagonist is Emma Frost. The objective of the game is to pass all 5 levels. In each level you can draw positive characters from the top right of the game, only if the negative character is from that movie (for example, if you are level 1 - which is related to Spider Man - then you can shoot Spider Man and il you can place anywhere you want in the game space, be careful that there are more favorable places than others, if you try to shoot character other than the level you will not be left.). Positive characters drawn from the window where they are cycling random films have the ability to automatically shoot the antagonist with a nuclear weapon. And the player can lightning with more damage than the atomic weapon of positive characters. You know that every thundering lightning consumes you out of life, and any contact with the negative character is eating your life. 
+![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/marvel.gif?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/menu.PNG?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/game.PNG?raw=true)
 ![](https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/JS%20Project/screenshots/credits.PNG?raw=true)
@@ -130,6 +136,26 @@ Well, the start is input from the user, the joystick selects rules, credits or s
 * [Others ](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%202/Probabilities%20%26%20Statistics)
 </details>
 
+<details><summary> Advanced Programming Techniques </summary>
+
+</details>
+
+<details><summary> Computer Networks </summary>
+
+</details>
+
+<details><summary> Database </summary>
+
+</details>
+
+<details><summary> Logic Programming </summary>
+
+</details>
+
+<details><summary> Software Development Methods </summary>
+
+</details>
+
 ### Year 1
 
 <details><summary> Formal Languages and Automata </summary>
@@ -183,7 +209,22 @@ Well, the start is input from the user, the joystick selects rules, credits or s
 * [Others](https://github.com/marianlupascu/School-Projects/tree/master/Bachelors%20Year%201/Object%20Oriented%20Programming)
 </details>
 
+<details><summary> Procedural Programming </summary>
+
+</details>
+
+<details><summary> Algorithm of Graphs </summary>
+
+</details>
+
+<details><summary> Algorithms and Data Structures </summary>
+
+</details>
+
+<details><summary> Architecture of Computer Systems </summary>
+
+</details>
+
 <p align="center">
 	<span>Lupascu Marian </span> <img src="https://github.com/marianlupascu/School-Projects/blob/master/Bachelors%20Year%202/Web%20Techniques/CSS%20Project/img/mini-logo.png?raw=true">
 </p>
-
