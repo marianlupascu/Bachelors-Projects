@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lupascu/Downloads/Reference-Implementation/Code/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+string
+-
+

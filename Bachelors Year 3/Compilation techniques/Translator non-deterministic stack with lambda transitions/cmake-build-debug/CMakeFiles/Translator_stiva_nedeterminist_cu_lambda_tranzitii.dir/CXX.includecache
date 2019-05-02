@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Marian Lupascu/Documents/Documente/FMI/III/SEM II/Tehnici de compilare/Translator stiva nedeterminist cu lambda-tranzitii/main.cpp
+iostream
+-
+fstream
+-
+set
+-
+vector
+-
+string
+-
+unordered_map
+-
+tuple
+-
+stack
+-
+ctime
+-
+

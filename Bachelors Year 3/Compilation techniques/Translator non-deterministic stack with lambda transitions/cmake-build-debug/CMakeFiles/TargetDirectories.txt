@@ -1,0 +1,3 @@
+C:/Users/Marian Lupascu/Documents/Documente/FMI/III/SEM II/Tehnici de compilare/Translator stiva nedeterminist cu lambda-tranzitii/cmake-build-debug/CMakeFiles/Translator_stiva_nedeterminist_cu_lambda_tranzitii.dir
+C:/Users/Marian Lupascu/Documents/Documente/FMI/III/SEM II/Tehnici de compilare/Translator stiva nedeterminist cu lambda-tranzitii/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Marian Lupascu/Documents/Documente/FMI/III/SEM II/Tehnici de compilare/Translator stiva nedeterminist cu lambda-tranzitii/cmake-build-debug/CMakeFiles/rebuild_cache.dir

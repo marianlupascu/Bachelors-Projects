@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.13)
+project(Translator_stiva_nedeterminist_cu_lambda_tranzitii)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(Translator_stiva_nedeterminist_cu_lambda_tranzitii main.cpp)

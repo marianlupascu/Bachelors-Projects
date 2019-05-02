@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Marian Lupascu/Documents/Documente/FMI/III/SEM II/Tehnici de compilare/EarleyParser/main.cpp
+iostream
+-
+fstream
+-
+set
+-
+vector
+-
+unordered_map
+-
+string
+-
+tuple
+-
+
