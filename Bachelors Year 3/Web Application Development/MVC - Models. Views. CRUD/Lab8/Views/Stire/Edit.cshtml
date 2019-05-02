@@ -1,0 +1,38 @@
+﻿@using System.Activities.Statements
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    ViewBag.Title = "Edit";
+    @model Lab8.Models.Stire
+}
+
+<h2>Edit</h2>
+<p>Afisare formular de editare stiri - cu datele vechi ale stirii</p>
+<form method="post" action="/Stire/Edit/@Model.Id">
+    @Html.HttpMethodOverride(HttpVerbs.Put)
+    <label>Titlu</label>
+    <br />
+    <input type="text" name="Titlu" value="@Model.Titlu" />
+    <br /><br />
+          <label>Continut</label>
+    <br />
+    <input type="text" name="Continut" value="@Model.Continut" />
+    <br /><br />
+    <label>Data</label>
+    <br />
+    <input type="text" name="Data" value="@Model.Data" />
+    <br />
+    <div class="col-md-10">
+        <select name="IdCategorie">
+            <option value="@Model.Categorie.Id">@Model.Categorie.Nume</option>
+            @foreach (var cat in ViewBag.Categorii)
+            {
+                if (cat.Id != @Model.Categorie.Id)
+                {
+                    <option value="@cat.Id">@cat.Nume</option>
+                }
+            }
+        </select>
+    </div>
+    <button type="submit">Modifica stire</button>
+</form>

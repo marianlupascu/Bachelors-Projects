@@ -1,0 +1,16 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    ViewBag.Title = "New";
+}
+
+<h2>Creare categorie</h2>
+<p>Afisare formular de adaugare categorii</p>
+<form method="post" action="/Categorie/New">
+    <label>Nume</label>
+    <br />
+    <input type="text" name="Nume" />
+    <br /><br />
+
+    <button type="submit">Adauga categoria</button>
+</form>

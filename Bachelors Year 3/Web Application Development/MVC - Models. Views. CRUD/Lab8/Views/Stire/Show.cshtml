@@ -1,0 +1,17 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    @model Lab8.Models.Stire
+}
+<h1>Afisare stire</h1>
+@Html.Partial("_PartialPage_Stire", @Model)
+<a href="/Stire/Edit/@Model.Id">Modifica stire</a>
+<form method="post" action="/Stire/Delete/@Model.Id">
+    @Html.HttpMethodOverride(HttpVerbs.Delete)
+    <button type="submit">Sterge stirea</button>
+</form>
+<hr />
+<a href="/Stire/Index">Inapoi la lista stirilor</a>
+<br />
+<a href="/Stire/New">Adauga alta stire</a>
+<br />

@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hello world!", "Hello world!\", "{76B3E449-8AC1-4EF8-928C-0FE97D459322}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61182"
+		Debug.AspNetCompiler.PhysicalPath = "Hello world!\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61182\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61182"
+		Release.AspNetCompiler.PhysicalPath = "Hello world!\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61182\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61182"
+		SlnRelativePath = "Hello world!\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Guess game", "Guess game\", "{2068D6C0-24C0-4E05-A2E9-EC1DF4371625}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61754"
+		Debug.AspNetCompiler.PhysicalPath = "Guess game\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61754\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61754"
+		Release.AspNetCompiler.PhysicalPath = "Guess game\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61754\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61754"
+		SlnRelativePath = "Guess game\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76B3E449-8AC1-4EF8-928C-0FE97D459322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B3E449-8AC1-4EF8-928C-0FE97D459322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2068D6C0-24C0-4E05-A2E9-EC1DF4371625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2068D6C0-24C0-4E05-A2E9-EC1DF4371625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52C2B271-E103-4FE8-9917-6C285E3577C7}
+	EndGlobalSection
+EndGlobal

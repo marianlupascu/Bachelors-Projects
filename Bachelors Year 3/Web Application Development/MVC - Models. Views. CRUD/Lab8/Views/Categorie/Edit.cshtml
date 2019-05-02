@@ -1,0 +1,16 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<p>Afisare formular de editare categori - cu datele vechi ale categorii</p>
+<form method="post" action="/Categorie/Edit/@ViewBag.Categorie.Id">
+    @Html.HttpMethodOverride(HttpVerbs.Put)
+    <label>Nume</label>
+    <br />
+    <input type="text" name="Nume" value="@ViewBag.Categorie.Nume" />
+    <br /><br />
+    <button type="submit">Modifica categorie</button>
+</form>

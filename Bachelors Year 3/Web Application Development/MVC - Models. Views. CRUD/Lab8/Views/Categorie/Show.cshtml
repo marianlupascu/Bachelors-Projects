@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    ViewBag.Title = "Show";
+}
+
+<h1>@ViewBag.Categorie.Nume</h1>
+@foreach (var stire in ViewBag.Categorie.Stiri)
+{
+    <p>@stire.Titlu</p>
+}
+<br />
+<a href="/Categorie/Edit/@ViewBag.Categorie.Id">Modifica categorie</a>
+<form method="post" action="/Categorie/Delete/@ViewBag.Categorie.Id">
+    @Html.HttpMethodOverride(HttpVerbs.Delete)
+    <button type="submit">Sterge categoria</button>
+</form>
+<hr />
+<a href="/Categorie/Index">Inapoi la lista categoriilor</a>
+<br />
+<a href="/Categorie/New">Adauga alta categorie</a>
+<br />

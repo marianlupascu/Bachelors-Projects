@@ -1,0 +1,17 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    ViewBag.Title = "Index";
+}
+
+<h2>Afisare categorii</h2>
+@foreach (var categorie in ViewBag.Categorii)
+{
+    <p>@categorie.Nume</p>
+    <a href="/Categorie/Show/@categorie.Id">Afisare categorie</a>
+    <br />
+    <hr />
+    <br />
+}
+<a href="/Categorie/New">Adauga alta categorie</a>
+<br />

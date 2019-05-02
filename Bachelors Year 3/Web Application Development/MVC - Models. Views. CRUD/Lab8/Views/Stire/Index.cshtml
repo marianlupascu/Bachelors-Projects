@@ -1,0 +1,17 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    ViewBag.Title = "Lista stiri";
+}
+
+<h2>Index</h2>
+
+<h2>Afisare stiri</h2>
+@foreach (Lab8.Models.Stire stire in ViewBag.Stiri)
+{
+
+    @Html.Partial("_PartialPage_Stire", stire);
+     
+}
+<a href="/Stire/New">Adauga alta stire</a>
+<br />

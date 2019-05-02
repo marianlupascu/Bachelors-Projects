@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    ViewBag.Title = "New";
+    @model Lab8.Models.Stire
+}
+
+<h2>Creare stire</h2>
+<p>Afisare formular de adaugare stire</p>
+<form method="post" action="/Stire/New">
+    <label>Titlu</label>
+    <br />
+    <input type="text" name="Titlu" />
+    @Html.ValidationMessageFor(m => m.Titlu)
+    <br /><br />
+    <label>Continut</label>
+    <br />
+    <input type="text" name="Continut" />
+    @Html.ValidationMessageFor(m => m.Continut)
+    <br /><br />
+    <label>Data</label>
+    <br />
+    <input type="text" name="Data" />
+    @Html.ValidationMessageFor(m => m.Data)
+    <br />
+
+    <div class="col-md-10">
+        <select name="IdCategorie">
+            <option value="">Selectati categoria</option>
+            @foreach (var cat in ViewBag.Categorii)
+            {
+                <option value="@cat.Id">@cat.Nume</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit">Adauga stirea</button>
+</form>

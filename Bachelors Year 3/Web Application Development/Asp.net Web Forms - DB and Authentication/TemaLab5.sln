@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TemaLab5", "TemaLab5\", "{3E4EBBA4-8F47-4798-955F-FB6F52505C25}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62159"
+		Debug.AspNetCompiler.PhysicalPath = "TemaLab5\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62159\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62159"
+		Release.AspNetCompiler.PhysicalPath = "TemaLab5\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62159\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62159"
+		SlnRelativePath = "TemaLab5\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E4EBBA4-8F47-4798-955F-FB6F52505C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E4EBBA4-8F47-4798-955F-FB6F52505C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6655E80-2268-4D7E-B526-1FDC5723A0B4}
+	EndGlobalSection
+EndGlobal
