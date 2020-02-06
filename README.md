@@ -1,4 +1,4 @@
-# Bachelors-Projects
+# Bachelor-Projects
 
 > This repository contains college projects
 
