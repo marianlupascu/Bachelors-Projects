@@ -11,6 +11,8 @@ Thesis - [Style Extractor and Distance Between Styles](https://github.com/marian
 - _Web Development_ – [JiraCloneMVC](https://github.com/marianlupascu/JiraCloneMVC)
 - _Deep learning_ – [Google Landmark Recognition Challenge](https://github.com/marianlupascu/Google-Landmark-Recognition-Challenge)
 
+Click too see screenshots & details:
+
 <details><summary><i>Computer Vision</i> - Seam Carving for Content-Aware Image Resizing</summary>
 
 `Matlab` Image operator called seam carving that supports content-aware image resizing for both reduction and expansion. A seam is an optimal 8-connected path of pixels on a single image from top to bottom, or left to right, where optimality is defined by an image energy function. By repeatedly carving out or inserting seams in one direction we can change the aspect ratio of an image. By applying these operators in both directions we can retarget the image to a new size. The selection and order of seams protect the content of the image, as defined by the energy function. Seam carving can also be used for image content enhancement and object removal. We support various visual saliency measures for defining the energy of an image, and can also include user input to guide the process.
@@ -58,6 +60,8 @@ Thesis - [Style Extractor and Distance Between Styles](https://github.com/marian
 ## [Year 2](Bachelors%20Year%202)
 
 - _Software Development Methods_ – [ROTL](https://github.com/marianlupascu/ROTL)
+
+Click too see screenshots & details:
 
 <details><summary><i>Advanced Object Programming</i> - SpaceChat</summary>
 
@@ -194,6 +198,8 @@ Well, the start is input from the user, the joystick selects rules, credits or s
 ## [Year 1](Bachelors%20Year%201)
 
 - _Object-Oriented Programming_ – [Chess-Game](https://github.com/marianlupascu/Chess-Game)
+
+Click too see screenshots & details:
 
 <details><summary><i>Formal Languages and Automata</i> - CYK Parsing</summary>
 
